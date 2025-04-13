@@ -539,3 +539,31 @@
 }
 
 /*-------------------------------------------------------------------------------*/
+/*--------------           Easter event button             --------------*/
+
+@spritesheet easter_event_button_sprite {
+    src: interface/large/event_button2.rttex;
+    resolution: 1x;
+    easter_event_icon_stat0: 0px 256px 128px 128px;
+    easter_event_icon_stat1_anim: 0px 384px 128px 128px;
+    easter_event_icon_stat1: 128px 256px 128px 128px;
+}
+
+.event_item .state0 .easter_event {
+    decorator: image(easter_event_icon_stat0);
+}
+
+.event_item .state1 .easter_event {
+    decorator: image(easter_event_icon_stat1);
+}
+
+    .event_item .state1 .easter_event .rays {
+        decorator: image(easter_event_icon_stat1_anim);
+        animation: 3s fade-in-out infinite;
+    }
+
+.easter_event .label {
+    margin-top: 43dp;
+}
+
+/*-------------------------------------------------------------------------------*/

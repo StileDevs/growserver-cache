@@ -82,7 +82,7 @@
         <Particle>
           <Set name="sprite">s_lute</Set>
           <Set name="relativeToEmitter">true</Set>
-          <Set name="inSpecificOrder">true</Set>
+          <Set name="inSpecificOrder">false</Set>
           <Set name="blendingMode">PREMULTIPLIED_ALPHA</Set>
           <Set name="lifeTime">0.06</Set>
           <Set name="initialAngle" source="lute_angle"/>
@@ -110,7 +110,7 @@
         </Emitter>
         <Particle>
           <Set name="sprite">s_luteTrail</Set>
-          <Set name="inSpecificOrder">true</Set>
+          <Set name="inSpecificOrder">false</Set>
           <Set name="blendingMode">ADDITIVE</Set>
           <Curve name="initialAlpha">
             <KeyFrame>0, 1</KeyFrame>
@@ -152,7 +152,7 @@
         </Emitter>
         <Particle randomSpriteFrame="true">
           <Set name="sprite">s_luteTrailMusic</Set>
-          <Set name="inSpecificOrder">true</Set>
+          <Set name="inSpecificOrder">false</Set>
           <Set name="blendingMode">PREMULTIPLIED_ALPHA</Set>
           <Curve name="initialAlpha">
             <KeyFrame>0, 1</KeyFrame>

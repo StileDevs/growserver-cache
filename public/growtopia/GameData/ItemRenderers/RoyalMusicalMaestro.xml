@@ -115,14 +115,14 @@
 	</Data>
 	<RenderRules>
 		<Update>
-			<AvatarTransform class="Action" onState="Motion.Sleep|Motion.Idle|Motion.Punch">
+			<AvatarTransform class="ActionUpdate" onState="Motion.Sleep|Motion.Idle|Motion.Punch">
 				<Set name="action">CLEAR</Set>
 			</AvatarTransform>
 			<StopIf>
 				<IsSleepingOnaBed>true</IsSleepingOnaBed>
 				<IsZombified>true</IsZombified>
 			</StopIf>
-			<AvatarTransform class="Action" onState="Motion.Dance">
+			<AvatarTransform class="ActionUpdate" onState="Motion.Dance">
 				<Set name="action">NOD</Set>
 			</AvatarTransform>
 			<AvatarTransform class="ArmAngle" onState="Motion.Dance|Motion.Punch">
@@ -139,7 +139,7 @@
 			</AvatarTransform>
 		</Update>
 		<SwitchOffClothingParticles>
-			<AvatarTransform class="Action">
+			<AvatarTransform class="ActionUpdate">
 				<Set name="action">CLEAR</Set>
 			</AvatarTransform>
 		</SwitchOffClothingParticles>

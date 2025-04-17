@@ -4663,7 +4663,7 @@
 		<Rarity>90</Rarity>
 		<EnableOnServer>true</EnableOnServer>
 	</Pet>
-	
+
 	<Pet itemID="ITEM_ID_DISCOBALL_COMPANION">
 		<Name>"Discoball Companion"</Name>
 		<SubName>"disco"</SubName>

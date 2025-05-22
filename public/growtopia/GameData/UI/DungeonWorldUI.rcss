@@ -15,10 +15,12 @@ body.dungeon_world_ui {
     margin-top: 0dp;
 }
 
+.full-hide #left_panel,
 .hide #left_panel {
     transition: margin-left 0.2s linear-in;
     margin-left: -200dp;
 }
+
 /*-------------------------------------------------------------------------------*/
 /*--------------                   Souls panel                     --------------*/
 @spritesheet souls_panel_sprites {

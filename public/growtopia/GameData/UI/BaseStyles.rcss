@@ -8,13 +8,6 @@ body {
     padding: 0;
 }
 
-@media (theme: platform-ios)
-{
-    body {
-        margin-left: 60dp;
-    }
-}
-
 button.common_btn {
 	font-size: 36dp;
 	font-weight: bold;
@@ -40,6 +33,116 @@ button.common_btn:hover
 {
 	transform: scale(1.05);
 }
+
+/*-------------------------------------------------------------------------------------------*/
+/*------------------------               Typography               ---------------------------*/
+
+.font-title {
+	font-family: Century Gothic;
+	font-size: 46dp;
+}
+
+.font-button-text {
+	font-family: Century Gothic;
+	font-size: 36dp;
+}
+
+.font-body1 {
+	font-family: Century Gothic;
+	font-size: 26dp;
+}
+
+.font-body2 {
+	font-family: Century Gothic;
+	font-size: 20dp;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*------------------------              Popup Colors              ---------------------------*/
+
+.popup-border-color {
+	border-color: #87B8CCFF;
+}
+
+.popup-background-color {
+	background-color: #186B8BCC;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*------------------------             Buttons Colors             ---------------------------*/
+
+.button-tab-color {
+	background-color: #54879BFF;
+}
+
+	.button-tab-color.select {
+		background-color: #79C2DEFF;
+	}
+
+.button-green-color {
+	background-color: #3AAA35FF;
+}
+
+.button-yellow-color {
+	background-color: #FDCC04FF;
+}
+
+.button-default-color {
+	background-color: #87B8CCFF;
+}
+
+.button-light-default-color {
+	background-color: rgba(165,227,251,255);
+}
+
+.button-purple-color {
+	background-color: #AF08CAFF;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*------------------------              Button Style              ---------------------------*/
+
+.button {
+	display: inline-block;
+	padding: 18dp;
+	border-radius: 6dp;
+	text-align: center;
+	vertical-align: middle;
+	align-items: center;
+	justify-content: center;
+	box-shadow: #000f 2dp 2dp 2dp 0px;
+}
+
+	.button:active {
+		transform: scale(0.95);
+		filter: brightness(0.7);
+	}
+
+	.button .label {
+		display: inline-block;
+		color: #fff;
+		font-family: Century Gothic;
+		font-size: 36dp;
+		text-align: center;
+		white-space: nowrap;
+		width: auto;
+	}
+
+	.button .button-icon {
+		vertical-align: middle;
+		margin-right: 12dp;
+		width: 32dp;
+		height: 32dp;
+	}
+
+.label {
+	line-height: 0.78em;
+	margin-top: 0.2em;
+	margin-bottom: 0.28em;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*------------------------              Text Color                ---------------------------*/
 
 .color_orange_text
 {

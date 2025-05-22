@@ -4714,4 +4714,59 @@
 		<EnableOnServer>true</EnableOnServer>
 	</Pet>
 	
+	<Pet itemID="ITEM_ID_FLYING_BELL">
+		<Name>"Flying Bell"</Name>
+		<SubName>"flying"</SubName>
+		<EndName>"bell"</EndName>
+		<PowerName>"Sound Blast!"</PowerName>
+		<PowerDesc>"Blast sound waves to deal 9 `wAir`` damage!"</PowerDesc>
+		<Element>"AIR"</Element>
+		<Damage>9</Damage>
+		<Cooldown>5</Cooldown>
+		<PowerType>"ATTACK"</PowerType>
+		<PowerFlags>2</PowerFlags>
+		<PowerStatusGroup>
+			<PowerStatus type="STUNNED">
+				<Value>0</Value>
+				<Duration>1</Duration>
+			</PowerStatus>
+		</PowerStatusGroup>
+		<AnimType>"SHOOT"</AnimType>
+		<PowerParticle>163</PowerParticle>
+		<HitParticle>0</HitParticle>
+		<PowerParticleV2>0</PowerParticleV2>
+		<HitParticleV2>0</HitParticleV2>
+		<PowerSound>"audio/peep.wav"</PowerSound>
+		<PowerHitSound>""</PowerHitSound>
+		<Rarity>90</Rarity>
+		<EnableOnServer>true</EnableOnServer>
+	</Pet>
+
+	<Pet itemID="ITEM_ID_PET_HATCHLEY">
+		<Name>"Pet Hatchley"</Name>
+		<SubName>"hatch"</SubName>
+		<EndName>"ley"</EndName>
+		<PowerName>"Musically Stunned!"</PowerName>
+		<PowerDesc>"Sings to deal 10 `wAir`` Damage and stuns the target for 8s, making them unable to act."</PowerDesc>
+		<Element>"AIR"</Element>
+		<Damage>10</Damage>
+		<Cooldown>10</Cooldown>
+		<PowerType>"ATTACK"</PowerType>
+		<PowerFlags>0</PowerFlags>
+		<PowerStatusGroup>
+			<PowerStatus type="STUNNED">
+				<Value>0</Value>
+				<Duration>8</Duration>
+			</PowerStatus>
+		</PowerStatusGroup>
+		<AnimType>"SHOOT"</AnimType>
+		<PowerParticle>22</PowerParticle>
+		<HitParticle>0</HitParticle>
+		<PowerParticleV2>0</PowerParticleV2>
+		<HitParticleV2>0</HitParticleV2>
+		<PowerSound>"audio/bird3.wav"</PowerSound>
+		<PowerHitSound>""</PowerHitSound>
+		<Rarity>100</Rarity>
+		<EnableOnServer>true</EnableOnServer>
+	</Pet>
 </BattlePets>

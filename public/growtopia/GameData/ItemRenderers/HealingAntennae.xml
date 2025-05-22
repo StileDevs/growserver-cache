@@ -92,7 +92,7 @@
 						<KeyFrame>0.5, 1</KeyFrame>
 						<KeyFrame>1, 0</KeyFrame>
 					</Curve>
-					<Random name="initialScale" min="0.5, 0.5" max="1, 1" />
+					<Random name="initialScale" min="0.5" max="1" />
 					<Random name="lifeTime" min="0.6" max="1" />
 					<Set name="initialVelocity">0, -50</Set>
 				</Particle>

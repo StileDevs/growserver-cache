@@ -4,8 +4,15 @@
         <link type="text/rcss" href="DungeonWorldUI.rcss" />
         <link type="text/template" href="BaseTemplate.rml" />
         <link type="text/template" href="WorldUI/RightMenuPanel.rml" />
+        <script lang="text/lua">
+            function onShowUI(document, element)
+                local insets = GetInsets()
+                element.style.width = (element.client_width - insets[1]).."px"
+                element: SetClass('full-hide', false)
+            end
+        </script>
     </head>
-   <body template="BaseTemplate" class="dungeon_world_ui">
+   <body template="BaseTemplate" class="dungeon_world_ui" onshow="onShowUI(document, element)">
       <div id="left_panel">
           <div id="souls_panel" data-model="DungeonInfoModel">
               <div id="soul_left_panel">

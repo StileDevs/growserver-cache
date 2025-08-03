@@ -5,7 +5,7 @@
 		<Sprite name="s_HitEffect" fileName="game/npc1.rttex" textureSize="32" frame="22,8" />
 		<Sprite name="s_MuzzleFlash" fileName="game/npc1.rttex" textureSize="32" frame="22,9" />
 		<StateMachines>
-			<StateMachine name="NPC">
+			<StateMachine name="NPC" ServerOnly="true">
 				<States start="Stationary">
 					<NPCStationary name="Stationary"/>
 					<NPCPlatformAttack name="AttackProjectile" ExitTime="0.5">

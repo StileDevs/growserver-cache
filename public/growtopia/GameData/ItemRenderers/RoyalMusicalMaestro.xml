@@ -115,6 +115,10 @@
 	</Data>
 	<RenderRules>
 		<Update>
+			<MusicSource onState="Motion.Dance|Motion.Punch">
+				<Set name="ItemID">ITEM_ID_ROYAL_MUSICAL_MAESTRO</Set>
+				<Set name="FadeOutTimeMs">500</Set>
+			</MusicSource>
 			<AvatarTransform class="ActionUpdate" onState="Motion.Sleep|Motion.Idle|Motion.Punch">
 				<Set name="action">CLEAR</Set>
 			</AvatarTransform>
@@ -147,10 +151,6 @@
 			<ParticleSystemUpdate name="ps_Dance" onState="Motion.Dance"/>
 		</AddClothingParticles>
 		<RenderInFront value="playerCenter">
-			<MusicSource onState="Motion.Dance|Motion.Punch">
-				<Set name="ItemID">ITEM_ID_ROYAL_MUSICAL_MAESTRO</Set>
-				<Set name="FadeOutTimeMs">500</Set>
-			</MusicSource>
 			<StopIf>
 				<IsSleepingOnaBed>true</IsSleepingOnaBed>
 				<IsZombified>true</IsZombified>

@@ -8,6 +8,21 @@ body {
     padding: 0;
 }
 
+.hidden
+{
+	display: none;
+}
+
+.top-padding
+{
+	padding-top: 20dp;
+}
+
+	.top-padding.hidden
+	{
+		padding-top: 0dp;
+	}
+
 button.common_btn {
 	font-size: 36dp;
 	font-weight: bold;
@@ -104,11 +119,13 @@ button.common_btn:hover
 
 .button {
 	display: inline-block;
-	padding: 18dp;
+	padding-left: 18dp;
+	padding-right: 18dp;
+	padding-top: 12dp;
+	padding-bottom: 12dp;
 	border-radius: 6dp;
 	text-align: center;
 	vertical-align: middle;
-	align-items: center;
 	justify-content: center;
 	box-shadow: #000f 2dp 2dp 2dp 0px;
 }
@@ -126,6 +143,7 @@ button.common_btn:hover
 		text-align: center;
 		white-space: nowrap;
 		width: auto;
+		font-effect: shadow(1dp 1dp #000);
 	}
 
 	.button .button-icon {
@@ -144,10 +162,15 @@ button.common_btn:hover
 /*-------------------------------------------------------------------------------------------*/
 /*------------------------              Text Color                ---------------------------*/
 
-.color_orange_text
-{
-	color: #F5CB5C;
+.color_orange_text {
+	color: #F5CB5C; /**rgb(245, 203, 92)*/
 }
+
+/* Default text color*/
+.color_dreamsicle {
+	color: rgb(252, 230, 186);
+}
+
 
 .color_light_cyan {
 	color: rgb(255, 255, 255);
@@ -207,10 +230,6 @@ button.common_btn:hover
 
 .color_very_pale_pink {
 	color: rgb(254, 235, 255);
-}
-
-.color_dreamsicle {
-	color: rgb(252, 230, 186);
 }
 
 .color_white {
@@ -315,3 +334,27 @@ button.common_btn:hover
 }
 
 /*-------------------------------------------------------------------------------*/
+
+
+.show-scrollbar scrollbarvertical {
+	width: 10dp;
+	z-index: 1;
+	margin-right: 2dp;
+}
+
+.show-scrollbar slidertrack {
+
+}
+
+.show-scrollbar sliderbar {
+	background-color: #87B8CC66;
+	border-radius: 5dp;
+}
+
+.show-scrollbar sliderarrowdec {
+	display: none;
+}
+
+.show-scrollbar sliderarrowinc {
+	display: none;
+}

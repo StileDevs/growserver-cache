@@ -11,7 +11,10 @@
                         <div class="itemIdIcon" data-style-decorator="buttonData.itemIdIcon" />
 
                         <div class="label" data-rml="ToRMLText(buttonData.buttonText)" />
-                        <div class="notification_icon" data-visible="buttonData.notification > 0"></div>
+                        <div class="notification_circle" data-visible="buttonData.notification > 0">
+							<div class="notification_text">{{buttonData.notification}}</div>
+						</div>
+						<div class="notification_exclamation" data-visible="buttonData.notification < 0"></div>
                     </div>
                 </div>
             </div>
@@ -26,7 +29,10 @@
                         <div class="itemIdIcon" data-style-decorator="buttonData.itemIdIcon" />
 
                         <div class="label" data-visible="buttonData.counter < buttonData.counterMax">{{buttonData.counter}}/{{buttonData.counterMax}}</div>
-                        <div class="notification_icon" data-visible="buttonData.notification > 0"></div>
+                        <div class="notification_circle" data-visible="buttonData.notification > 0">
+							<div class="notification_text" data-visible="buttonData.notification > 1">{{buttonData.notification}}</div>
+                    </div>
+						<div class="notification_exclamation" data-visible="buttonData.notification < 0"></div>
                     </div>
                 </div>
             </div>
@@ -41,7 +47,7 @@
                     <div data-attr-class="buttonData.buttonClass">
                         <div class="label" data-rml="ToRMLText(buttonData.buttonText)">
                         </div>
-                        <div class="notification_icon" data-visible="buttonData.notification > 0"></div>
+                        <div class="notification_exclamation" data-visible="buttonData.notification > 0"></div>
                     </div>
                 </div>
             </div>
@@ -57,7 +63,7 @@
                     </div>
 
 
-                    <div class="notification_icon" data-visible="buttonData.notification > 0"></div>
+					<div class="notification_exclamation" data-visible="buttonData.notification > 0"></div>
                 </div>
             </div>
         </div>

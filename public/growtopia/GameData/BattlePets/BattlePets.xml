@@ -4021,7 +4021,7 @@
 		<Rarity>50</Rarity>
 		<EnableOnServer>true</EnableOnServer>
 	</Pet>
-
+	
 	<Pet itemID="ITEM_ID_UNEARTHLY_SYNTHOID">
 		<Name>"Unearthly Synthoid"</Name>
 		<SubName>"synth"</SubName>
@@ -4033,6 +4033,12 @@
 		<Cooldown>10</Cooldown>
 		<PowerType>"ATTACK"</PowerType>
 		<PowerFlags>0</PowerFlags>
+		<PowerStatusGroup>
+			<PowerStatus type="NONE">
+				<Value>15</Value>
+				<Duration>0</Duration>
+			</PowerStatus>
+		</PowerStatusGroup>
 		<AnimType>"SHOOT"</AnimType>
 		<PowerParticle>10</PowerParticle>
 		<HitParticle>11</HitParticle>
@@ -4702,7 +4708,7 @@
 		<Damage>30</Damage>
 		<Cooldown>13</Cooldown>
 		<PowerType>"ATTACK"</PowerType>
-		<PowerFlags></PowerFlags>
+		<PowerFlags>0</PowerFlags>
 		<AnimType>"SHOOT"</AnimType>
 		<PowerParticle>10</PowerParticle>
 		<HitParticle>11</HitParticle>
@@ -4769,4 +4775,210 @@
 		<Rarity>100</Rarity>
 		<EnableOnServer>true</EnableOnServer>
 	</Pet>
+		
+	<Pet itemID="ITEM_ID_CAPTAIN_BARK">
+		<Name>"Captain Bark"</Name>
+		<SubName>"capi"</SubName>
+		<EndName>"bark"</EndName>
+		<PowerName>"Supercharge"</PowerName>
+		<PowerDesc>"Charge up your next skill with +50% Damage."</PowerDesc>
+		<Element>"FIRE"</Element>
+		<Damage>0</Damage>
+		<Cooldown>30</Cooldown>
+		<PowerType>"SELF_STATUS"</PowerType>
+		<PowerFlags>0</PowerFlags>
+		<PowerStatusGroup>
+			<PowerStatus type="SUPERCHARGED">
+				<Value>50</Value>
+				<Duration>10</Duration>
+			</PowerStatus>
+		</PowerStatusGroup>
+		<AnimType>"SPLAT"</AnimType>
+		<PowerParticle>134</PowerParticle>
+		<HitParticle>0</HitParticle>
+		<PowerParticleV2>0</PowerParticleV2>
+		<HitParticleV2>0</HitParticleV2>
+		<PowerSound>"audio/levelup2.wav"</PowerSound>
+		<PowerHitSound>""</PowerHitSound>
+		<Rarity>90</Rarity>
+		<EnableOnServer>true</EnableOnServer>
+	</Pet>
+
+	<Pet itemID="ITEM_ID_ROYAL_CAPTAIN_BARK">
+		<Name>"Royal Captain Bark"</Name>
+		<SubName>"roya"</SubName>
+		<EndName>"bark"</EndName>
+		<PowerName>"Supercharge"</PowerName>
+		<PowerDesc>"Charge up your next skill with +80% Damage."</PowerDesc>
+		<Element>"FIRE"</Element>
+		<Damage>0</Damage>
+		<Cooldown>20</Cooldown>
+		<PowerType>"SELF_STATUS"</PowerType>
+		<PowerFlags>0</PowerFlags>
+		<PowerStatusGroup>
+			<PowerStatus type="SUPERCHARGED">
+				<Value>80</Value>
+				<Duration>10</Duration>
+			</PowerStatus>
+		</PowerStatusGroup>
+		<AnimType>"SPLAT"</AnimType>
+		<PowerParticle>134</PowerParticle>
+		<HitParticle>0</HitParticle>
+		<PowerParticleV2>0</PowerParticleV2>
+		<HitParticleV2>0</HitParticleV2>
+		<PowerSound>"audio/levelup2.wav"</PowerSound>
+		<PowerHitSound>""</PowerHitSound>
+		<Rarity>90</Rarity>
+		<EnableOnServer>true</EnableOnServer>
+	</Pet>	
+	
+	<Pet itemID="ITEM_ID_PINEAPPLE_BLUMP_PET">
+		<Name>"Pineapple Blump Pet"</Name>
+		<SubName>"pineapple"</SubName>
+		<EndName>"blump"</EndName>
+		<PowerName>"Spikey Shield"</PowerName>
+		<PowerDesc>"Strike back for 20 `wAir`` Damage if hit within 8s."</PowerDesc>
+		<Element>"AIR"</Element>
+		<Damage>0</Damage>
+		<Cooldown>15</Cooldown>
+		<PowerType>"SELF_STATUS"</PowerType>
+		<PowerFlags>0</PowerFlags>
+		<PowerStatusGroup>
+			<PowerStatus type="SLASH_THORNS">
+				<Value>20</Value>
+				<Duration>8</Duration>
+			</PowerStatus>
+		</PowerStatusGroup>
+		<AnimType>"HOP"</AnimType>
+		<PowerParticle>204</PowerParticle>
+		<HitParticle>9</HitParticle>
+		<PowerParticleV2>0</PowerParticleV2>
+		<HitParticleV2>0</HitParticleV2>
+		<PowerSound>"audio/slash.wav"</PowerSound>
+		<PowerHitSound>""</PowerHitSound>
+		<Rarity>90</Rarity>
+		<EnableOnServer>true</EnableOnServer>
+	</Pet>
+	
+	<Pet itemID="ITEM_ID_MECHASAURUS_REX">
+		<Name>"Mechasaurus Rex"</Name>
+		<SubName>"mecha"</SubName>
+		<EndName>"rex"</EndName>
+		<PowerName>"Ratatata!"</PowerName>
+		<PowerDesc>"Fires several shots dealing `8Fire`` Damage!"</PowerDesc>
+		<Element>"FIRE"</Element>
+		<Damage>30</Damage>
+		<Cooldown>13</Cooldown>
+		<PowerType>"ATTACK"</PowerType>
+		<PowerFlags>0</PowerFlags>
+		<AnimType>"STREAM"</AnimType>
+		<PowerParticle>0</PowerParticle>
+		<HitParticle>0</HitParticle>
+		<PowerParticleV2>206</PowerParticleV2>
+		<HitParticleV2>0</HitParticleV2>
+		<PowerSound>"audio/ratatat.wav"</PowerSound>
+		<PowerHitSound>"audio/firework1.wav"</PowerHitSound>
+		<Rarity>90</Rarity>
+		<EnableOnServer>true</EnableOnServer>	
+
+		<BattleAnimation file="game/pets/p_mechasaurus_rex.rttex" frameSize="32,32">
+		<Animation type="Idle" frameInterval="100">
+			<Frame>0,0</Frame>
+			<Frame>1,0</Frame>
+			<Frame>2,0</Frame>
+		  </Animation>
+		  <Animation type="Attack" frameInterval="100">
+			<Frame>0,1</Frame>
+		  </Animation>
+		  <Animation type="GetHit" frameInterval="100">
+			<Frame>0,0</Frame>
+		  </Animation>
+		  <Animation type="Dead" frameInterval="100">
+			<Frame>0,0</Frame>
+		  </Animation>
+		</BattleAnimation>
+		<CageIcon file="game/pets/p_mechasaurus_rex.rttex" frameSize="32,32" frame="0,0"/>
+		
+	</Pet>
+
+
+	<Pet itemID="ITEM_ID_LANTERNS_CHORONOREAPER">
+		<Name>"Lantern's ChronoReaper Pet"</Name>
+		<SubName>"chrono"</SubName>
+		<EndName>"reaper"</EndName>
+		<PowerName>"To the Shadow Realm!"</PowerName>
+		<PowerDesc>"Open a portal dealing 10 `8Fire`` Damage to the enemy banishing them for 10s!"</PowerDesc>
+		<Element>"FIRE"</Element>
+		<Damage>10</Damage>
+		<Cooldown>7</Cooldown>
+		<PowerType>"ATTACK"</PowerType>
+		<PowerFlags>0</PowerFlags>
+		<PowerStatusGroup>
+			<PowerStatus type="FORCE_SWAP">
+				<Value>0</Value>
+				<Duration>1</Duration>
+			</PowerStatus>		
+			<PowerStatus type="NO_SWAP">
+				<Value>0</Value>
+				<Duration>10</Duration>
+			</PowerStatus>
+		</PowerStatusGroup>
+		<AnimType>"SHOOT"</AnimType>
+		<PowerParticle>0</PowerParticle>
+		<HitParticle>108</HitParticle>
+		<PowerParticleV2>0</PowerParticleV2>
+		<HitParticleV2>0</HitParticleV2>
+		<PowerSound>"audio/weird_hit.wav"</PowerSound>
+		<PowerHitSound>""</PowerHitSound>
+		<Rarity>70</Rarity>
+		<EnableOnServer>true</EnableOnServer>
+		
+		<BattleAnimation file="game/pets/p_chronoReaper.rttex" frameSize="32,32">
+		<Animation type="Idle" frameInterval="100">
+			<Frame>0,0</Frame>
+			<Frame>1,0</Frame>
+			<Frame>2,0</Frame>
+		  </Animation>
+		  <Animation type="Attack" frameInterval="100">
+			<Frame>3,0</Frame>
+		  </Animation>
+		  <Animation type="GetHit" frameInterval="100">
+			<Frame>0,0</Frame>
+		  </Animation>
+		  <Animation type="Dead" frameInterval="100">
+			<Frame>0,0</Frame>
+		  </Animation>
+		</BattleAnimation>
+		<CageIcon file="game/pets/p_chronoReaper.rttex" frameSize="32,32" frame="0,0"/>
+		
+	</Pet>
+
+	<Pet itemID="ITEM_ID_COOL_CAPYBARA">
+		<Name>"Cool Capybara"</Name>
+		<SubName>"cool"</SubName>
+		<EndName>"capybara"</EndName>
+		<PowerName>"Fortunate Fame!"</PowerName>
+		<PowerDesc>"Dodge all attacks for 10s."</PowerDesc>
+		<Element>"EARTH"</Element>
+		<Damage>0</Damage>
+		<Cooldown>15</Cooldown>
+		<PowerType>"SELF_STATUS"</PowerType>
+		<PowerFlags>0</PowerFlags>
+		<PowerStatusGroup>
+			<PowerStatus type="DODGE">
+				<Value>0</Value>
+				<Duration>10</Duration>
+			</PowerStatus>
+		</PowerStatusGroup>
+		<AnimType>"DANCE"</AnimType>
+		<PowerParticle>0</PowerParticle>
+		<HitParticle>0</HitParticle>
+		<PowerParticleV2>0</PowerParticleV2>
+		<HitParticleV2>0</HitParticleV2>
+		<PowerSound>"audio/slash.wav"</PowerSound>
+		<PowerHitSound>""</PowerHitSound>
+		<Rarity>100</Rarity>
+		<EnableOnServer>true</EnableOnServer>
+	</Pet>
+
 </BattlePets>

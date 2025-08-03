@@ -55,7 +55,7 @@
 			</ParticleSystem>
 		</ParticleSystems>
 		<StateMachines>
-			<StateMachine name="NPC">
+			<StateMachine name="NPC" ServerOnly="true">
 				<States start="FlyPatrol">
 					<NPCFlyingPatrol name="FlyPatrol">
 						<PatrolSpeed>50</PatrolSpeed>

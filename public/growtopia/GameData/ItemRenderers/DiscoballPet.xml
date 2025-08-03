@@ -89,10 +89,10 @@
 			</AvatarTransform>
 		</OnPunchUpdate>
 		<RenderHandItem>
-			<ParticleSystemRender name="ps_luteTrail"/>
 			<SpriteRender name="s_Hand" blend="PREMULTIPLIED_ALPHA" alignment="UPPER_CENTER" />
 		</RenderHandItem>
 		<RenderPet>
+      <ParticleSystemRender name="ps_luteTrail"/>
 			<ParticleSystemUpdate name="ps_luteTrail"/>
 			<SpriteRender name="s_Pet" blend="PREMULTIPLIED_ALPHA" drawShadow="false" scale="0.7,0.7"/>
 			<StopIf>

@@ -6,7 +6,7 @@
 		<Sprite name="destructoSprite" fileName="game/npc2.rttex" textureSize="64" frame="0,2"/>
 		<Sprite name="s_HitEffect" fileName="game/particles.rttex" textureSize="32" frame="10,9" />
 		<StateMachines>
-			<StateMachine name="NPC"> 
+			<StateMachine name="NPC" ServerOnly="true"> 
 				<States start="FlyPatrol">
 					<NPCSpawn name="ShieldState" IsTemporary="true">
 						<NpcTypeToSpawn>"Shield"</NpcTypeToSpawn>

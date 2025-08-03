@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Resources>
+	<String id="[TEST_TITLE]">`6Growtopia``</String>
+	<String id="[TEST_TEXT]">`3line 1``
+	`5line 2
+	`7line 3````</String>
+	<String id="[TEST_BTN1]">Cancel</String>
+	<String id="[TEST_BTN2]">Ok</String>
+	<String id="[TEST_DESCR]">Descr str</String>
+</Resources>

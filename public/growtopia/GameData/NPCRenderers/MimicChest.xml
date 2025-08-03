@@ -42,7 +42,7 @@
 			</ParticleSystem>
 		</ParticleSystems>
 		<StateMachines>
-			<StateMachine name="NPC">
+			<StateMachine name="NPC" ServerOnly="true">
 				<States start="Patrol">
 					<NPCPlatformPatrol name="Patrol">
 						<PatrolSpeed>0</PatrolSpeed>
@@ -72,7 +72,7 @@
 					<Transition to="Chase" from="Patrol|Jump|Fall|AttackProjectile">
 						<Condition type="and">
 							<IsOnGround>true</IsOnGround>
-							<IsVelocityMatchingToOneDirection IsVertical="true" operatorType="Less" UseAbsolute="true">0.1</IsVelocityMatchingToOneDirection>
+							<CheckNPCVelocity ComparisonElement="Y" operatorType="Less" abs="true">0.1</CheckNPCVelocity>
 							<IsPlayerDistanceMatching operatorType="Less">128</IsPlayerDistanceMatching>
 							<IsPlayerDistanceMatching operatorType="Greater">64</IsPlayerDistanceMatching>
 						</Condition>

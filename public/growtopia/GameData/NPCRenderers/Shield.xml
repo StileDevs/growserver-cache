@@ -3,7 +3,7 @@
 	<Data>
 		<Sprite name="sprite" fileName="game/bb_page1.rttex" textureSize="128" frame="4,4"/>
 		<StateMachines>
-			<StateMachine name="NPC">
+			<StateMachine name="NPC" ServerOnly="true">
 				<States start="InitialState">
 					<NPCSpawn name="InitialState" ExitTime="2">
 						<NpcTypeToSpawn>"ShieldCrystal"</NpcTypeToSpawn>

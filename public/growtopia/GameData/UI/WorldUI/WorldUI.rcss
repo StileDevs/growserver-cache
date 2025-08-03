@@ -3,7 +3,6 @@ body.world_ui {
     height: 100%;
     clip: always;
     margin-left: inset-left;
-    margin-right: inset-right;
 }
 
 #top_panel {
@@ -22,6 +21,10 @@ body.world_ui {
     left: 8dp;
     transition: margin-left 0.2s linear-in;
     margin-left: 0dp;
+}
+
+#left_panel.withPearls {
+    top: 120dp;
 }
 
 .full-hide #left_panel,
@@ -108,5 +111,58 @@ body.world_ui {
     #gems_panel #plus_button:active {
         image-color: #aaa;
     }
+
+/*-------------------------------------------------------------------------------*/
+/*--------------                   Pearl panel                      --------------*/
+@spritesheet pearls_panel_sprites {
+    src: interface/large/gui_store_top_scale9.rttex;
+    resolution: 1x;
+    pearls_panel_bg: 0px 0px 32px 32px;
+    pearls_panel_bg_inner: 15px 15px 2px 2px;
+}
+
+#pearls_panel {
+    display: block;
+    margin-top: 10dp;
+}
+
+#pearls_panel.hidden {
+    display: none;
+}
+
+#pearls_panel .panel {
+    width: 186dp;
+    height: 41dp;
+    decorator: ninepatch(pearls_panel_bg, pearls_panel_bg_inner);
+    display: inline-block;
+    vertical-align: top;
+}
+
+#pearls_panel #pearl_left_panel {
+    width: 41dp;
+    height: 39dp;
+    background-color: rgba(121, 194, 222, 255);
+    border-top-left-radius: 6dp;
+    border-bottom-left-radius: 6dp;
+    margin-left: -1dp;
+    margin-right: 8dp;
+    display: inline-block;
+}
+
+#pearls_panel #pearl_left_panel #pearl_icon {
+    width: 26dp;
+    height: 26dp;
+    decorator: image(interface/large/pearl_icon_overlay.rttex);
+    margin: auto;
+}
+
+#pearls_panel #pearl_right_panel {
+    font-size: 24dp;
+    font-weight: bold;
+    line-height: 39dp;
+    font-effect: shadow(2dp 2dp black);
+    display: inline-block;
+    vertical-align: top;
+}
 
 /*-------------------------------------------------------------------------------*/

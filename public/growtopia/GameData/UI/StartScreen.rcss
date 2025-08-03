@@ -203,3 +203,116 @@ body.start-screen {
     #version-text.display {
         transform: translateX(0);
     }
+
+
+.start-screen-shadow-text {
+    font-effect: shadow(1dp 1dp #000);
+}
+
+/*--------------    Event Themes     --------------*/
+
+#backGround {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+#backGround .background-img {
+    height: 100%;
+    decorator: image("interface/large/main_menu_bg_themed.rttex" cover);
+    display: none;
+}
+
+#backGround.display {
+    display: none;
+}
+
+.button-themed-colour {
+	background-color: rgba(165,227,251,255);
+}
+
+@media (theme: cinco-theme) {
+    #backGround {
+        display: block;
+    }
+
+    #backGround .background-img {
+        display: block;
+    }
+
+    .button-themed-colour {
+	    background-color: rgba(37, 171, 67, 255);
+    }
+}
+
+@media (theme: spp-theme) {
+    #backGround {
+        display: block;
+    }
+
+    #backGround .background-img {
+        display: block;
+    }
+
+    .button-themed-colour {
+	    background-color: rgba(37, 171, 67, 255);
+    }
+}
+
+@media (theme: beach-party-theme) {
+    #backGround {
+        display: block;
+    }
+
+    #backGround .background-img {
+        display: block;
+    }
+
+    .button-themed-colour {
+	    background-color: rgba(144, 192, 255, 255);
+    }
+}
+
+@media (theme: summerfest-theme) {
+    #backGround {
+        display: block;
+    }
+
+    #backGround .background-img {
+        display: block;
+    }
+
+    .button-themed-colour {
+	    background-color: rgba(77, 106, 240, 255);
+    }
+}
+
+@media (theme: winterfest-theme) {
+    #backGround {
+        display: block;
+    }
+
+    #backGround .background-img {
+        display: block;
+    }
+
+    .button-themed-colour {
+	    background-color: rgba(0, 170, 40, 255);
+    }
+}
+
+@media (theme: patricks-theme) {
+    #backGround {
+        display: block;
+    }
+
+    #backGround .background-img {
+        display: block;
+    }
+
+    .button-themed-colour {
+	    background-color: rgba(165, 227, 251, 255);
+    }
+}

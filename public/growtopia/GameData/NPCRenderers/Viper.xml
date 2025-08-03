@@ -4,7 +4,7 @@
 		<Sprite name="s_snake" fileName="game/npc1.rttex" textureSize="32" frame="23,8"/>
 		<Sprite name="s_HitEffect" fileName="game/npc1.rttex" textureSize="32" frame="22,8" />
 		<StateMachines>
-			<StateMachine name="NPC">
+			<StateMachine name="NPC" ServerOnly="true">
 				<States start="Patrol">
 					<NPCPlatformPatrol name="Patrol">
 						<PatrolSpeed>25</PatrolSpeed>
@@ -31,7 +31,7 @@
 					<Transition to="Chase" from="Patrol|Fall|AttackProjectile">
 						<Condition type="and">
 							<IsOnGround>true</IsOnGround>
-							<IsVelocityMatchingToOneDirection IsVertical="true" operatorType="Less" UseAbsolute="true">0.1</IsVelocityMatchingToOneDirection>
+							<CheckNPCVelocity ComparisonElement="Y" operatorType="Less" abs="true">0.1</CheckNPCVelocity>
 							<IsPlayerDistanceMatching operatorType="Less">150</IsPlayerDistanceMatching>
 							<IsPlayerDistanceMatching operatorType="Greater">100</IsPlayerDistanceMatching>
 						</Condition>

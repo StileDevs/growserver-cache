@@ -312,6 +312,7 @@
         <IsZombified>true</IsZombified>
         <IsWearing slot="SHIRT">ITEM_ID_TACTICAL_STEALTH_DEVICE</IsWearing>
         <IsVariableBool name="isMannequin">true</IsVariableBool>
+        <IsVariableBool name="isBattleLeash">true</IsVariableBool>
       </StopIf>
       <AvatarTransform class="Face" onState="PetPunch.True">
         <Set name="face">NORMAL</Set>
@@ -345,7 +346,7 @@
         <StopIf>
           <IsFacingLeft>true</IsFacingLeft>
         </StopIf>
-      <SpriteRender name="s_medal" offset="0,0" alignment="DOWN_CENTER" />
+        <SpriteRender name="s_medal" offset="0,0" alignment="DOWN_CENTER" />
       </Group>
     </RenderFrontpack>
     <RenderBackpack>

@@ -78,6 +78,25 @@
     margin: 1dp;
     margin-bottom: 2dp;
 }
+
+/*--------------    Mailbox event button     --------------*/
+
+@spritesheet mailbox_button_sprite {
+    src: interface/large/event_button4.rttex;
+    resolution: 1x;
+    mailbox_button_icon_no_mail: 0px 384px 128px 128px;
+    mailbox_button_icon_with_mail: 128px 384px 128px 128px;
+    notification_icon_circle: 256px 384px 128px 128px;
+}
+
+.event_item .state0 .mailbox {
+    decorator: image(mailbox_button_icon_no_mail);
+}
+
+.event_item .state1 .mailbox {
+    decorator: image(mailbox_button_icon_with_mail);
+}
+
 /*-------------------------------------------------------------------------------*/
 /*--------------                   FTUE button                     --------------*/
 @spritesheet ftue_button_sprite {
@@ -104,13 +123,32 @@
     ftue_switcher_icon_on: 0px 128px 256px 128px;
 }
 
-.notification_icon {
+.notification_exclamation {
     position: absolute;
     width: 48dp;
     height: 48dp;
     decorator: image(notification_icon_image);
     margin-left: -8dp;
     margin-top: -8dp;
+}
+
+.notification_circle {
+    position: absolute;
+    width: 48dp;
+    height: 48dp;
+    decorator: image(notification_icon_circle);
+    margin-left: -8dp;
+    margin-top: -8dp;
+}
+
+.notification_text {
+    position: absolute;
+    width: 48dp;
+    height: 48dp;
+    text-align: center;
+    line-height: 48dp;
+    vertical-align: middle;
+    font-size: 16dp;
 }
 
 #phone .notification_icon {
@@ -646,5 +684,55 @@
     decorator: image(cinco_pinata_button_state1_anim_icon);
     animation: 2s infinite alternate pause-fade-in;
 }
+
+/*-------------------------------------------------------------------------------*/
+/*--------------         SPP Tropical Fruits event button         --------------*/
+
+@spritesheet spp_tropical_fruits_button_sprite {
+    src: interface/large/event_button2.rttex;
+    resolution: 1x;
+    spp_tropical_fruits_button_state0_icon: 384px 256px 128px 128px;
+    spp_tropical_fruits_button_state0_anim_icon: 256px 256px 128px 128px;
+}
+
+.event_item .state0 .spp_tropical_fruits {
+    decorator: image(spp_tropical_fruits_button_state0_icon);
+}
+
+.event_item .state0 .spp_tropical_fruits .rays {
+    opacity: 0;
+    decorator: image(spp_tropical_fruits_button_state0_anim_icon);
+    animation: 2s infinite alternate pause-fade-in;
+}
+
+/*-------------------------------------------------------------------------------*/
+/*--------------         SPP Tropical Fruits event button         --------------*/
+
+@spritesheet summerfest_button_sprite {
+    src: interface/large/event_button.rttex;
+    resolution: 1x;
+    summerfest_button_state0_icon: 0px 256px 128px 128px;
+    summerfest_button_state1_icon: 0px 384px 128px 128px;
+    summerfest_button_state1_anim_icon: 128px 256px 128px 128px;
+}
+
+.summerfest .label {
+    margin-top: 43dp;
+}
+
+.event_item .state0 .summerfest {
+    decorator: image(summerfest_button_state0_icon);
+}
+
+.event_item .state1 .summerfest {
+    decorator: image(summerfest_button_state1_icon);
+}
+
+    .event_item .state1 .summerfest .rays {
+        opacity: 0;
+        decorator: image(summerfest_button_state1_anim_icon);
+        animation: 3s fade-in-out infinite;
+    }
+
 
 /*-------------------------------------------------------------------------------*/

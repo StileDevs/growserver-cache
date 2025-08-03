@@ -6,7 +6,7 @@
 		<Sprite name="trail_sprite" fileName="game/particles_large14.rttex" textureSize="64" frame="10,1"/>
 		<Sprite name="s_HitEffect" fileName="game/particles.rttex" textureSize="32" frame="10,9" />
 		<StateMachines>
-			<StateMachine name="NPC">
+			<StateMachine name="NPC" ServerOnly="true">
 				<States start="Patrol">
 					<NPCPlatformPatrol name="Patrol">
 						<PatrolSpeed>70</PatrolSpeed>
@@ -305,10 +305,6 @@
 			<ParticleSystemUpdate name="trail_particle" onState="NPC.Dash" />
 			<ParticleSystemUpdate name="damagingAura" onState="NPC.Patrol|NPC.Jump" />
 		</Render>
-		<RenderInFront>
-			<Translate>0,-16,0</Translate>
-			<NPCHealthBarRender TexturePath="interface/large/gui_event_npchealth_bar.rttex" TextureSize="17,9" TextureCoordinates="0,0"/>
-		</RenderInFront>
 		<SwitchOffClothingParticles>
 			<ParticleSystemOff name="fireParticle1"/>
 			<ParticleSystemOff name="trail_particle"/>

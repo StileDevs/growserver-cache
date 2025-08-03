@@ -2,6 +2,7 @@ body.dungeon_world_ui {
     width: 100%;
     height: 100%;
     clip: always;
+    margin-left: inset-left;
 }
 
 #left_panel {

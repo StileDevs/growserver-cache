@@ -18,6 +18,9 @@
     </head>
 
     <body template="BaseTemplate" class="start-screen" onshow="onShow(document)" data-model="AppContext">
+        <div id="backGround">
+          <div class="background-img" />
+        </div>
         <div id="logo">
             <div class="logo-img" />
         </div>
@@ -27,22 +30,22 @@
                     onclick="OnEvent(element, 'on-start-game')">
                 <span class="label">Play Online</span>
             </button>
-            <div class="button button-light-default-color" onclick="OnEvent(event, 'on-options')">
+            <div class="button button-themed-colour" onclick="OnEvent(event, 'on-options')">
                 <span class="label">Options</span>
             </div>
-            <div class="button button-light-default-color" onclick="OnEvent(event, 'on-about')">
+            <div class="button button-themed-colour" onclick="OnEvent(event, 'on-about')">
                 <span class="label">About</span>
             </div>
-            <div id="quit_button" class="button button-light-default-color" onclick="OnEvent(event, 'on-quit')">
+            <div id="quit_button" class="button button-themed-colour" onclick="OnEvent(event, 'on-quit')">
                 <span class="label">Quit</span>
             </div>
         </div>
         <div id="login-panel" data-visible="AppContext.IsLoggedIn">
             <div>
-                <div class="font-body1">Logged in as:</div>
+                <div class="font-body1 start-screen-shadow-text">Logged in as:</div>
                 <div class="player-name">
                     <div data-attr-class="'icon-img account-icon-' + AppContext.GetAccountType" />
-                    <span class="color_green font-body1">{{AppContext.GetPlayerName}}</span>
+                    <span class="color_green font-body1 start-screen-shadow-text">{{AppContext.GetPlayerName}}</span>
                 </div>
                 <div class="button button-yellow-color" onclick="OnEvent(event, 'on-logout')">
                     <span class="label" data-style-display="AppContext.IsUseUbiconnect?'block':'none'" data-rml="AppContext.GetAccountType == 'ubiconnect' ? 'Link' : 'Unlink'"></span>
@@ -50,6 +53,6 @@
                 </div>
             </div>
         </div>
-        <div id="version-text" class="font-body1"><span>{{AppContext.GetVersionString}}</span></div>
+        <div id="version-text" class="font-body1 start-screen-shadow-text"><span>{{AppContext.GetVersionString}}</span></div>
     </body>
 </rml>

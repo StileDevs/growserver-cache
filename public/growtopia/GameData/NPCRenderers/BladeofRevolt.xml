@@ -51,7 +51,7 @@
 			</CurveAnimationVec4>		
 		</Animations>
 		<StateMachines>
-			<StateMachine name="NPC">
+			<StateMachine name="NPC" ServerOnly="true">
 				<States start="FlyPatrol">
 					<NPCFlyingPatrol name="FlyPatrol">
 						<PatrolSpeed>0</PatrolSpeed>

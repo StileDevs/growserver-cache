@@ -29,7 +29,7 @@
 				  </Transition>
 			  </Transitions>
 		  </StateMachine>		  
-		  <StateMachine name="TrailAction">
+		  <StateMachine name="TrialAnim">
 			  <States>
 				  <State name="Idle" />
 				  <State name="Move" />
@@ -257,11 +257,11 @@
 
   <RenderRules>
 	<AddClothingParticles>
-		<ParticleSystemUpdate name="ps_luteTrail" onState="TrailAction.Idle"/>
-		<ParticleSystemUpdate name="ps_luteTrail2" onState="TrailAction.Idle"/>
+		<ParticleSystemUpdate name="ps_luteTrail" onState="TrialAnim.Idle"/>
+		<ParticleSystemUpdate name="ps_luteTrail2" onState="TrialAnim.Idle"/>
 		
-		<ParticleSystemUpdate name="ps_luteTrailMove" onState="TrailAction.Move"/>
-		<ParticleSystemUpdate name="ps_luteTrail2Move" onState="TrailAction.Move"/>
+		<ParticleSystemUpdate name="ps_luteTrailMove" onState="TrialAnim.Move"/>
+		<ParticleSystemUpdate name="ps_luteTrail2Move" onState="TrialAnim.Move"/>
 	</AddClothingParticles>
 	<RenderFrontpack>
 		<ParticleSystemRender name="ps_luteTrail"/>

@@ -47,11 +47,11 @@
 			<Info/>
 			<Enemy>
 				<Set name="SoulsReward">0</Set>
+				<Set name="destroyTileId">0</Set>
 			</Enemy>
 			<Movement/>
 			<Damage>
 				<Set name="damage">0</Set>
-				<Set name="destroyTileId">0</Set>
 			</Damage>
 			<StateMachine/>
 			<NPCRenderActionCmp/>

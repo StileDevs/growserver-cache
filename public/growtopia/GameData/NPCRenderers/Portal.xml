@@ -34,17 +34,16 @@
           <RandomNPCSpawn name="Spawn" IsTemporary="true">
             <NpcList>
               "BladeofRevolt : 1,
-              Swordsman : 1,
-              Viper : 2,
-              Jelatinous : 5"
+              Shriekgazer : 1,
+              WindGuardian : 1"
             </NpcList>
           </RandomNPCSpawn>
           <NPCAnticipation name="SpawnWait2" ExitTime="0.5"/>
           <NPCAnticipation name="End" ExitTime="0.25"/>
           <NPCSetTimerRandom name="SetTimer" IsTemporary="true">
             <TimerName>"timeToSpawn"</TimerName>
-            <Min>2</Min>
-            <Max>10</Max>
+            <Min>15</Min>
+            <Max>30</Max>
           </NPCSetTimerRandom>
         </States>
         <Transitions>
@@ -52,6 +51,7 @@
             <Condition type="and">
               <CheckTimer name="timeToSpawn">true</CheckTimer>
               <CheckNpcHealth operatorType="Greater" onlyBoss="true">50</CheckNpcHealth>
+              <CheckNumberOfNpcsInWorld  Type="dynamic" operatorType="Less">64</CheckNumberOfNpcsInWorld>
             </Condition>
           </Transition>
           <Transition to="SpawnWait1" from="Start"/>

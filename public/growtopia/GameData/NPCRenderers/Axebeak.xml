@@ -42,7 +42,7 @@
 			</SpriteAnimation>
 		</Animations>
 		<ParticleSystems>
-			<ParticleSystem name="fireParticle1">
+			<ParticleSystem name="fireParticle1" updateStage="Update" updateState="NPC.AttackProjectile">
 				<Emitter>
 					<Set name="offset">16,4</Set>
 					<Set name="emissionInterval">0.6</Set>
@@ -212,7 +212,6 @@
 	<RenderRules>
 		<Render>
 			<SpriteRender name="s_sprite" offset="0,-1"/>
-			<ParticleSystemUpdate name="fireParticle1" onState="NPC.AttackProjectile" />
 		</Render>		
 		<RenderInFront>
 			<Translate>0,-4,0</Translate>

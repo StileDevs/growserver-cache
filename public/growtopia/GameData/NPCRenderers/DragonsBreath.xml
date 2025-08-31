@@ -84,11 +84,11 @@
 			<MustKillNPC/>
 			<Enemy>
 				<Set name="SoulsReward">2</Set>
+				<Set name="destroyTileId">4344</Set>
 			</Enemy>
 			<Movement/>
 			<Damage>
 				<Set name="damage">0</Set>
-				<Set name="destroyTileId">4344</Set>
 			</Damage>
 			<StateMachine/>
 			<NPCRenderActionCmp/>
@@ -106,9 +106,11 @@
 	</Data>
 	<RenderRules>
 		<Render>
-			<ParticleSystemUpdate name="ps_MuzzleFlash" onState="NPC.AttackProjectile" />
 			<SpriteRender name="s_sprite"/>
 		</Render>
+		<Update>
+			<ParticleSystemUpdate name="ps_MuzzleFlash" onState="NPC.AttackProjectile" />
+		</Update>
 		<RenderInFront>
 			<Translate>0,-4,0</Translate>
 			<NPCHealthBarRender TexturePath="interface/large/gui_event_npchealth_bar.rttex" TextureSize="17,9" TextureCoordinates="0,0"/>

@@ -50,9 +50,9 @@
 		</Components>
 	</Data>
 	<RenderRules>
-		<Render>
+		<Update>
 			<ParticleSystemUpdate name="shieldRight"/>
-		</Render>
+		</Update>
 		<SwitchOffClothingParticles>
 			<ParticleSystemOff name="shieldRight"/>
 		</SwitchOffClothingParticles>

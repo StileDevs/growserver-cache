@@ -301,10 +301,12 @@
 	<RenderRules>
 		<Render>
 			<SpriteRender name="jelatinous_sprite"/>
+		</Render>
+		<Update>
 			<ParticleSystemUpdate name="fireParticle1" onState="NPC.Dash" />
 			<ParticleSystemUpdate name="trail_particle" onState="NPC.Dash" />
 			<ParticleSystemUpdate name="damagingAura" onState="NPC.Patrol|NPC.Jump" />
-		</Render>
+		</Update>
 		<SwitchOffClothingParticles>
 			<ParticleSystemOff name="fireParticle1"/>
 			<ParticleSystemOff name="trail_particle"/>

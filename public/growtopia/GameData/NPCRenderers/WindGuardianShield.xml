@@ -8,7 +8,9 @@
         <Set name="SoulsReward">0</Set>
         <Set name="destroyTileId">548</Set>
       </Enemy>
-      <Movement/>
+      <Movement>
+	      <Set name="IsStatic">true</Set>
+      </Movement>
       <ShieldCmp>
         <Set name="MakeParentInvincible">false</Set>
       </ShieldCmp>

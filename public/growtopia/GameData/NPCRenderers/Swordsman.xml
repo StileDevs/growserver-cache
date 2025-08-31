@@ -114,12 +114,12 @@
 			</StateMachineCounter>
 			<Enemy>
 				<Set name="SoulsReward">8</Set>
+				<Set name="destroyTileId">186</Set>
 			</Enemy>
 			<MustKillNPC/>
 			<Movement/>
 			<Damage>
 				<Set name="damage">10</Set>
-				<Set name="destroyTileId">186</Set>
 			</Damage>
 			<NPCRenderActionCmp/>
 			<StateMachine/>

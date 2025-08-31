@@ -251,12 +251,14 @@
 	</Data>
 	<RenderRules>
 		<Render>
-			<ParticleSystemUpdate name="slash_particle" onState="NPC.SlashWave"/>
-			<ParticleSystemUpdate name="ice_spikes_particle_right" onState="NPC.SlamAttackParticle"/>
-			<ParticleSystemUpdate name="ice_spikes_particle_left" onState="NPC.SlamAttackParticle"/>
 			<SpriteRender name="destructoSprite" scale="2,2" offset="0,-20"/>
 			<Translate>0,-16,0</Translate>
 			<NPCHealthBarRender TexturePath="interface/large/gui_event_npchealth_bar.rttex" TextureSize="17,9" TextureCoordinates="0,0" />
 		</Render>
+		<Update>
+			<ParticleSystemUpdate name="slash_particle" onState="NPC.SlashWave"/>
+			<ParticleSystemUpdate name="ice_spikes_particle_right" onState="NPC.SlamAttackParticle"/>
+			<ParticleSystemUpdate name="ice_spikes_particle_left" onState="NPC.SlamAttackParticle"/>
+		</Update>
 	</RenderRules>
 </ItemRenderer>

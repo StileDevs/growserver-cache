@@ -276,12 +276,14 @@
 	</Data>
 	<RenderRules>
 		<Render>
+			<SpriteRender name="jelatinous_sprite" scale="2,2"/>
+		</Render>
+		<Update>
 			<ParticleSystemUpdate name="windFeetLeftParticle" onState="NPC.AnticipationLeap"/>
 			<ParticleSystemUpdate name="windFeetRightParticle" onState="NPC.AnticipationLeap"/>
-			<SpriteRender name="jelatinous_sprite" scale="2,2"/>
 			<ParticleSystemUpdate name="fireParticle1" onState="NPC.Dash" />
 			<ParticleSystemUpdate name="trail_particle" onState="NPC.Dash" />
-		</Render>
+		</Update>
 		<RenderInFront>
 			<Translate>0,-16,0</Translate>
 			<NPCHealthBarRender TexturePath="interface/large/gui_event_npchealth_bar.rttex" TextureSize="17,9" TextureCoordinates="0,0"/>

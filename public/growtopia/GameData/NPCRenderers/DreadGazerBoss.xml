@@ -206,7 +206,7 @@
 					</Set>
 				</Particle>
 			</ParticleSystem>
-			<ParticleSystem name="teleportMuzzleParticle" updateStage="Render" updateState="NPC.TeleportAttackParticle">
+			<ParticleSystem name="teleportMuzzleParticle" updateStage="Update" updateState="NPC.TeleportAttackParticle">
 				<Emitter>
 					<Set name="particlesPerEmission">1</Set>
 				</Emitter>
@@ -287,11 +287,12 @@
 			<SpriteRender name="gazerSprite"/>
 			<Translate>0,-16,0</Translate>
 			<NPCHealthBarRender TexturePath="interface/large/gui_event_npchealth_bar.rttex" TextureSize="17,9" TextureCoordinates="0,0" onState="NPC.FlyPatrol|NPC.AnticipationLaserBeam|NPC.AnticipationFireBall|NPC.AttackProjectile|NPC.AttackLaserBeam"/>
-			
+			<ParticleSystemRender name="laserbeam_particle"/>
+			<ParticleSystemRender name="ps_MuzzleFlash"/>
+		</Render>
+		<Update>
 			<ParticleSystemUpdate name="laserbeam_particle" onState="NPC.AttackLaserBeam"/>
 			<ParticleSystemUpdate name="ps_MuzzleFlash" onState="NPC.AttackLaserBeam"/>
-			<ParticleSystemRender name="laserbeam_particle" onState="NPC.AttackLaserBeam"/>
-			<ParticleSystemRender name="ps_MuzzleFlash" onState="NPC.AttackLaserBeam"/>
-		</Render>
+		</Update>
 	</RenderRules>
 </ItemRenderer>

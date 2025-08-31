@@ -265,7 +265,7 @@
 					<Set name="finalAlpha">0</Set>
 				</Particle>
 			</ParticleSystem>
-			<ParticleSystem name="fireParticle1">
+			<ParticleSystem name="fireParticle1" updateStage="Update" updateState="NPC.Dash">
 				<Emitter>
 					<Set name="offset">8,0</Set>
 					<Set name="emissionInterval">0.4</Set>
@@ -333,9 +333,11 @@
 		<Render>
 			<Translate>0,-16,0</Translate>
 			<SpriteRender name="axebeakboss_sprite"/>
-			<ParticleSystemUpdate name="fireParticle1" onState="NPC.Dash" />
-			<ParticleSystemUpdate name="speedLinesParticle" onState="NPC.DashDiagonal|NPC.DashTopLeft|NPC.DashTopRight"/>
 		</Render>
+		<Update>
+			<Translate>0,-16,0</Translate>
+			<ParticleSystemUpdate name="speedLinesParticle" onState="NPC.DashDiagonal|NPC.DashTopLeft|NPC.DashTopRight"/>
+		</Update>
 		<RenderInFront>
 			<Translate>0,-32,0</Translate>
 			<NPCHealthBarRender TexturePath="interface/large/gui_event_npchealth_bar.rttex" TextureSize="17,9" TextureCoordinates="0,0"/>

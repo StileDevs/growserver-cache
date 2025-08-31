@@ -38,7 +38,7 @@
 			</SpriteAnimation>
 		</Animations>
 		<ParticleSystems>
-			<ParticleSystem name="trail_particle" updateStage="Render" updateState="NPC.Chase">
+			<ParticleSystem name="trail_particle" updateStage="Update" updateState="NPC.Chase">
 				<Emitter>
 					<Set name="offset">0, 0</Set>
 					<Set name="emissionInterval">0.3</Set>

@@ -59,9 +59,9 @@
 		</Components>
 	</Data>
 	<RenderRules>
-		<Render>
+		<Update>
 			<ParticleSystemUpdate name="healingArea"/>
-		</Render>
+		</Update>
 		<SwitchOffClothingParticles>
 			<ParticleSystemOff name="healingArea"/>
 		</SwitchOffClothingParticles>

@@ -241,8 +241,10 @@
 			<Translate>0,-4,0</Translate>
 			<SpriteRender name="s_sprite" offset="0,-16"/>
 			<SpriteRender name="s_dirt_anim_sprite" offset="0,-16" tintOverride="117,85,49,255"/>
-			<ParticleSystemUpdate name="fireParticle1" onState="NPC.AttackProjectile" />
 		</Render>
+		<Update>
+			<ParticleSystemUpdate name="fireParticle1" onState="NPC.AttackProjectile" />
+		</Update>
 		<RenderInFront>
 			<Translate>0,-26,0</Translate>
 			<NPCHealthBarRender TexturePath="interface/large/gui_event_npchealth_bar.rttex" TextureSize="17,9" TextureCoordinates="0,0" onState="NPC.Chase|NPC.AttackProjectile|NPC.Jump|NPC.Fall"/>

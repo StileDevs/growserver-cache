@@ -1038,4 +1038,34 @@
     }
 
 
-/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*//*--------------           Halloween event button             --------------*/
+
+@spritesheet halloween_button_sprite {
+    src: interface/large/event_button2.rttex;
+    resolution: 1x;
+    halloween_button_state0_icon: 0px 0px 128px 128px;
+    halloween_button_state1_anim_icon: 0px 128px 128px 128px;
+    halloween_button_state1_icon: 128px 0px 128px 128px;
+    halloween_button_state2_icon: 128px 128px 128px 128px;
+}
+
+.event_item .state0 .halloween {
+    decorator: image(halloween_button_state0_icon);
+}
+
+.event_item .state1 .halloween {
+    decorator: image(halloween_button_state1_icon);
+}
+
+    .event_item .state1 .halloween .rays {
+        decorator: image(halloween_button_state1_anim_icon);
+        animation: 3s fade-in-out infinite;
+    }
+
+.event_item .state2 .halloween {
+    decorator: image(halloween_button_state2_icon);
+}
+
+.halloween .label {
+    margin-top: 43dp;
+}

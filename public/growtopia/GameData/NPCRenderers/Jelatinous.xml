@@ -156,6 +156,8 @@
 		<Components>
 			<Info/>
 			<MustKillNPC/>
+			<TintOverrideCmp/>
+			<AttachmentSlotsCmp/>
 			<StateMachineTimer>
 				<Set name="timeToJump">3</Set>
 			</StateMachineTimer>			

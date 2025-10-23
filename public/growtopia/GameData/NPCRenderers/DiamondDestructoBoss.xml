@@ -219,6 +219,7 @@
 			<Info/>
 			<MustKillNPC/>
 			<AttachmentSlotsCmp/>
+			<TintOverrideCmp/>
 			<Enemy>
 				<Set name="SoulsReward">0</Set>
 				<Set name="destroyTileId">440</Set>

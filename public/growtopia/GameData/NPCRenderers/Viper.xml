@@ -99,6 +99,8 @@
 		</ParticleSystems>
 		<Components>
 			<Info/>
+			<AttachmentSlotsCmp/>
+			<TintOverrideCmp/>
 			<MustKillNPC/>
 			<Enemy>
 				<Set name="SoulsReward">5</Set>

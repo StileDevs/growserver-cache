@@ -111,4 +111,13 @@
 	<String id="[mail_livestreamrewards_title]">Thanks for Joining Growtopia Live! </String>
 	<String id="[mail_livestreamrewards_desc]">Rewards inside</String>
 	
+	<String id="[mail_dungeons2025_body]">Hi Growtopians,&#10;&#10;The Dungeons have changed-new boss, new powers, new dangers! Use the exclusive code `4DNMAGIC25`` to claim 70 Scrolls, power up your strength, and confront the mysterious `qMagic Crystal Ball Boss``! Sharpen your skills and conquer the challenge before it's too late!&#10;&#10;The Growtopia Team</String>
+	<String id="[mail_dungeons2025_title]">A New Dungeon Challenge Awaits! Code inside!</String>
+	<String id="[mail_dungeons2025_desc]">Take your 70 Scrolls and dive in!</String>
+	
+	<String id="[mail_halloween2025_body]">Hi Growtopians,&#10;&#10;The Dark King calls once more! Venture into the `8Tomb of Growganoth``, brave vanishing platforms, and make your offerings to the `8Maw`` for haunting treasures. Use your `2Dark Tickets, Sigils``, and `2Dark King's Offerings`` to begin your ritual-and don't forget your `2Fashion Show Tickets`` to celebrate in spooky style. The shadows won't wait forever!&#10;&#10;The Growtopia Team</String>
+	<String id="[mail_halloween2025_title]">The Dark King Awaits Your Tribute!</String>
+	<String id="[mail_halloween2025_desc]">Claim gifts and face Growganoth's wrath!</String>
+
+	
 </Resources>

@@ -29,7 +29,9 @@
 		</ParticleSystems>
 		<Components>
 			<Info/>
-			<Movement/>
+			<Movement>
+				<Set name="IsStatic">true</Set>
+			</Movement>
 			<ShieldCmp/>
 			<NPCRenderActionCmp/>
 			<AttachmentCmp/>

@@ -118,7 +118,9 @@
 		<Components>
 			<Info/>
 			<MustKillNPC/>
+			<AttachmentSlotsCmp/>
 			<StateMachineTimer/>
+			<TintOverrideCmp/>
 			<Enemy>
 				<Set name="SoulsReward">5</Set>
 				<Set name="destroyTileId">186</Set>

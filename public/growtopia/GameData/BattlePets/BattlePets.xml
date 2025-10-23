@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf - 8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <BattlePets>
 
 
@@ -5042,7 +5042,6 @@
 	</Pet>
 
 
-
 	<Pet itemID="ITEM_ID_14DEVILS_FRIENDLY_DOGGY_LEASH">
 		<Name>"14DEViL's Friendly Doggy Leash"</Name>
 		<SubName>"friendly"</SubName>
@@ -5072,6 +5071,51 @@
 		<CageIcon file="game/pets/p_friendly_dog.rttex" frameSize="32,32" frame="0,0"/>
 	</Pet>
 
-
+	
+	
+	<Pet itemID="ITEM_ID_CINDER_SPRTIES">
+		<Name>"Cinder Sprites"</Name>
+		<SubName>"cinder"</SubName>
+		<EndName>"sprites"</EndName>
+		<PowerName>"Multiply"</PowerName>
+		<PowerDesc>"Summon a friend for 5s. If beaten, it takes the hit instead, reviving you with 5% life."</PowerDesc>
+		<Element>"EARTH"</Element>
+		<Damage>0</Damage>
+		<Cooldown>5</Cooldown>
+		<PowerType>"SELF_STATUS"</PowerType>
+		<PowerFlags>0</PowerFlags>
+		<PowerStatusGroup>
+			<PowerStatus type="REANIMATE">
+				<Value>5</Value>
+				<Duration>5</Duration>
+			</PowerStatus>
+		</PowerStatusGroup>
+		<AnimType>"DANCE"</AnimType>
+		<PowerParticle>1</PowerParticle>
+		<HitParticle>1</HitParticle>
+		<PowerParticleV2>1</PowerParticleV2>
+		<HitParticleV2>1</HitParticleV2>
+		<PowerSound>"audio/mlaunch.wav"</PowerSound>
+		<PowerHitSound>""</PowerHitSound>
+		<Rarity>20</Rarity>
+		<EnableOnServer>true</EnableOnServer>
+		<BattleAnimation file="game/pets/p_cinder.rttex" frameSize="32,32">
+			<Animation type="Idle" frameInterval="100">
+				<Frame>0,0</Frame>
+				<Frame>1,0</Frame>
+				<Frame>2,0</Frame>
+			</Animation>
+			<Animation type="Attack" frameInterval="100">
+				<Frame>6,0</Frame>
+			</Animation>
+			<Animation type="GetHit" frameInterval="100">
+				<Frame>0,0</Frame>
+			</Animation>
+			<Animation type="Dead" frameInterval="100">
+				<Frame>0,0</Frame>
+			</Animation>
+		</BattleAnimation>
+		<CageIcon file="game/pets/p_cinder.rttex" frameSize="32,32" frame="0,0"/>
+	</Pet>
 
 </BattlePets>

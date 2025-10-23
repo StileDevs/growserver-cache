@@ -240,6 +240,8 @@
 		</ParticleSystems>
 		<Components>
 			<Info/>
+			<TintOverrideCmp/>
+			<AttachmentSlotsCmp/>
 			<MustKillNPC/>
       <IsBossNPC>
         <Set name="displayName">"Ice Golem"</Set>

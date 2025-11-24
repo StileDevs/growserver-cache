@@ -119,5 +119,16 @@
 	<String id="[mail_halloween2025_title]">The Dark King Awaits Your Tribute!</String>
 	<String id="[mail_halloween2025_desc]">Claim gifts and face Growganoth's wrath!</String>
 
+	<String id="[SEED_DIARY_PAGE]">Page {}/{}</String>
+	<String id="[SEED_DIARY_DISCOVERED]">`oDiscovered: `` `5{}/{}``</String>
+	<String id="[SEED_DIARY_GROWN]">`oPlanted: `` `5{}/{}``</String>
+	<String id="[SEED_DIARY_MAKE_INFO]">`oSeed can be used to make:``</String>
+	<String id="[SEED_DIARY_NO_SELECT_INFO]">Select an item to view details.</String>
+	<String id="[SEED_DIARY_NO_ITEMS_INFO_1]">`wNo items discovered.``</String>
+	<String id="[SEED_DIARY_NO_ITEMS_INFO_2]">Collect `5items`` or `5seeds`` to reveal more items.</String>
+
+	<String id="[mail_thanksgiving2025_body]">Hi Growtopians,&#10;&#10;The worlds are filling with Turkeys and rewards - come join the fun! Ring your Bell, gather Turkeys, and take on Sgt. Stuffins for exclusive treasures. &#10;Redeem code `2THXGIVING25GT-A`` to pick up your free Organic Turkey, Turkey Sucker, and Thanksgiving Bell. Jump in and celebrate the season with everyone!&#10;&#10;The Growtopia Team</String>
+	<String id="[mail_thanksgiving2025_title]">Thanksgiving Gift code Inside!</String>
+	<String id="[mail_thanksgiving2025_desc]">Grab your gifts and join the hunt!</String>
 	
 </Resources>

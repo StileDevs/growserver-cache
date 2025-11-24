@@ -62,7 +62,8 @@ button.common_btn:hover
 	font-size: 36dp;
 }
 
-.font-body1 {
+.font-body1,
+.font-regular {
 	font-family: Century Gothic;
 	font-size: 26dp;
 }

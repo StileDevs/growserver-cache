@@ -85,7 +85,7 @@
 				<Frame>15,14</Frame>
 			</SpriteAnimation>				
 			
-			<SpriteAnimation name="MantleAnimationCats" sprite="chestBackgroundSpriteCats" animTime="1600" playOnState="IsPunching.False" isLoop="true">
+			<SpriteAnimation name="MantleAnimationCats" sprite="chestBackgroundSpriteCats" autoPlay="true" animTime="punchAnimTime" isLoop="true">
 				<Frame>0,13</Frame>
 				<Frame>1,13</Frame>
 				<Frame>2,13</Frame>
@@ -102,26 +102,7 @@
 				<Frame>13,13</Frame>
 				<Frame>14,13</Frame>
 				<Frame>15,13</Frame>
-			</SpriteAnimation>				
-			
-			<SpriteAnimation name="MantleAnimationCatsPunch" sprite="chestBackgroundSpriteCats" animTime="800" playOnState="IsPunching.True" isLoop="true">
-				<Frame>0,13</Frame>
-				<Frame>1,13</Frame>
-				<Frame>2,13</Frame>
-				<Frame>3,13</Frame>
-				<Frame>4,13</Frame>
-				<Frame>5,13</Frame>
-				<Frame>6,13</Frame>
-				<Frame>7,13</Frame>
-				<Frame>8,13</Frame>
-				<Frame>9,13</Frame>
-				<Frame>10,13</Frame>
-				<Frame>11,13</Frame>
-				<Frame>12,13</Frame>
-				<Frame>13,13</Frame>
-				<Frame>14,13</Frame>
-				<Frame>15,13</Frame>
-			</SpriteAnimation>		
+			</SpriteAnimation>					
 			
 			<SpriteAnimation name="emberAnimation" sprite="emberSprite" animTime="300">
 				<Frame>24,8</Frame>
@@ -284,6 +265,9 @@
 				<Set name="IncludeAllActions">true</Set>
 			</Default>
 		</RenderOptions>
+		<VariableMap>
+			<Set name="punchAnimTime">1600</Set>
+		</VariableMap>
 	</Data>
 	<RenderRules>
 		<RenderChestItem>
@@ -322,6 +306,8 @@
 				<IsWearing slot="SHIRT">ITEM_ID_TACTICAL_STEALTH_DEVICE</IsWearing>
 			</StopIf>
 			<Group onState="IsDying.False">
+				<ArithmethicOperation LeftHandVariableName="punchAnimTime" RightHandVariableName="1600" OperationType="Set" onState="IsPunching.False" />
+				<ArithmethicOperation LeftHandVariableName="punchAnimTime" RightHandVariableName="800" OperationType="Set" onState="IsPunching.True" />
 				<SpriteRender name="chestBackgroundSprite" offset="0,6" drawShadow="false" blend="PREMULTIPLIED_ALPHA" alignment="DOWN_CENTER" />
 			</Group>
 		</RenderBehind>

@@ -374,7 +374,7 @@
 		<Set name="description">"`2Shoot Fireballs"</Set>
 		<SubBuffs>Fireball,FireballDamageUp,BaseCritChanceUp,BaseCritDamageUp</SubBuffs>
 	</Buff>
-	
+
 	<Buff Type="AbilityGroup" Name="ITEM_ID_DUNGEON_ABILITY_SWORD_SLASH" index="2">
 		<Set name="soulsPrice">100</Set>
 		<Set name="maxLevel">1</Set>
@@ -424,7 +424,7 @@
 		<Set name="abilitySlot">"FiringProjectileSlot"</Set>
 		<Set name="prerequisites">"ITEM_ID_DUNGEON_ABILITY_FIREBALL_LEVEL_2"</Set>
 	</Buff>
-	
+
 	<Buff Type="Damage" Name="BaseSlashDamageUp2">
 		<Set name="damageIncrease">40</Set>
 		<Set name="soulsPrice">0</Set>
@@ -446,7 +446,7 @@
 		<SubBuffs>SwordSlash,BaseSlashDamageUp2,BaseCritChanceUp,BaseCritDamageUp</SubBuffs>
 		<Set name="successors">"ITEM_ID_DUNGEON_ABILITY_SLASH_3|ITEM_ID_DUNGEON_ABILITY_LIFE_STEAL|ITEM_ID_DUNGEON_ABILITY_EXPLODING_PUNCH"</Set>
 	</Buff>
-	
+
 	<!--ABILITY_TOXIC_BLAST"-->
 	<Buff Type="FireProjectile" Name="ITEM_ID_DUNGEON_ABILITY_TOXIC_BLAST" index="7">
 		<Set name="randomChancePercentage">100</Set>

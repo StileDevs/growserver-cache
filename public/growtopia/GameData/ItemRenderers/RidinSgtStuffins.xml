@@ -38,7 +38,7 @@
 			  <Set name="face">MAD</Set>
 		  </AvatarTransform>
 	  </OnPunchUpdate>
-	  <RenderBehind value="playerCenter">
+	  <RenderBehind>
 		  <StopIf type="or">
 			  <IsZombified>true</IsZombified>
 			  <IsSitting>true</IsSitting>
@@ -47,42 +47,18 @@
 		  </StopIf>
 
 
-		  <Group>
-			  <StopIf>
-				  <IsVariableBool name="isMannequin">true</IsVariableBool>
-			  </StopIf>
-			  <Translate>10,-9,0</Translate>
+      <Translate>10,15,0</Translate>
 			  <SpriteRender name="s_Back" blend="PREMULTIPLIED_ALPHA" drawShadow="true"/>
-		  </Group>
-		  <Group>
-			  <StopIf>
-				  <IsVariableBool name="isMannequin">false</IsVariableBool>
-			  </StopIf>
-			  <Translate>10,-28,0</Translate>
-			  <SpriteRender name="s_Back" blend="PREMULTIPLIED_ALPHA" drawShadow="true"/>
-		  </Group>
 	  </RenderBehind>
-	  <RenderInFront value="playerCenter">
+	  <RenderInFront>
 		  <StopIf type="or">
 			  <IsZombified>true</IsZombified>
 			  <IsSitting>true</IsSitting>
 			  <IsSleepingOnaBed>true</IsSleepingOnaBed>
 			  <IsWearing slot="SHIRT">ITEM_ID_TACTICAL_STEALTH_DEVICE</IsWearing>
 		  </StopIf>
-		  <Group>
-			  <StopIf>
-				  <IsVariableBool name="isMannequin">true</IsVariableBool>
-			  </StopIf>
 			  <Translate>9,-11,0</Translate>
 			  <SpriteRender name="s_Front" blend="PREMULTIPLIED_ALPHA" drawShadow="true" />
-		  </Group>
-		  <Group>
-			  <StopIf>
-				  <IsVariableBool name="isMannequin">false</IsVariableBool>
-			  </StopIf>
-			  <Translate>9,-29,0</Translate>
-			  <SpriteRender name="s_Front" blend="PREMULTIPLIED_ALPHA" drawShadow="true" />
-		  </Group>
 	  </RenderInFront>
 	  <Update>
 		  <StopIf type="or">

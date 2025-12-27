@@ -99,6 +99,18 @@
     z-index: 1;
 }
 
+.items-panel #border-blue {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 64dp;
+    height: 64dp;
+    border: 5dp rgb(136,184,203);
+    border-radius: 10dp;
+    background-color: rgba(0,0,0,128);
+    z-index: 1;
+}
+
 .items-panel #image-border {
     position: absolute;
     top: 0;
@@ -356,6 +368,17 @@
     width: 48dp;
     height: 48dp;
     padding: 0dp;
+}
+
+.selected-item .question-mark {
+    position: absolute;
+    top: 0dp;
+    left: 0dp;
+    position: relative;
+    width: 48dp;
+    height: 48dp;
+    padding: 0dp;
+    decorator: image(interface/large/gui_question.rttex);
 }
 
 .selected-item .image-border {

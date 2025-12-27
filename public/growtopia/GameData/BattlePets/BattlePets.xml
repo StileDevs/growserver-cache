@@ -5118,4 +5118,34 @@
 		<CageIcon file="game/pets/p_cinder.rttex" frameSize="32,32" frame="0,0"/>
 	</Pet>
 
+
+
+	<Pet itemID="ITEM_ID_PET_PRESENT_GOBLIN">
+		<Name>"Pet Present Goblin"</Name>
+		<SubName>"Present"</SubName>
+		<EndName>"goblin"</EndName>
+		<PowerName>"Face Slap"</PowerName>
+		<PowerDesc>"Smack the target in the face with a tenis ball, enraging them to inflict 20% more Damage for 15s. The rage stacks up to 20 times."</PowerDesc>
+		<Element>"WATER"</Element>
+		<Damage>10</Damage>
+		<Cooldown>4</Cooldown>
+		<PowerType>"ATTACK"</PowerType>
+		<PowerFlags>0</PowerFlags>
+		<PowerStatusGroup>
+			<PowerStatus type="STACK_MIGHT">
+				<Value>20</Value>
+				<Duration>15</Duration>
+			</PowerStatus>
+		</PowerStatusGroup>
+		<AnimType>"SHOOT"</AnimType>
+		<PowerParticle>147</PowerParticle>
+		<HitParticle>147</HitParticle>
+		<PowerParticleV2>0</PowerParticleV2>
+		<HitParticleV2>0</HitParticleV2>
+		<PowerSound>"audio/swoosh.wav"</PowerSound>
+		<PowerHitSound>"audio/punch_organic.wav"</PowerHitSound>
+		<Rarity>100</Rarity>
+		<EnableOnServer>true</EnableOnServer>
+	</Pet>
+
 </BattlePets>

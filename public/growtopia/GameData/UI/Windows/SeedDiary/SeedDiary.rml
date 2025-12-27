@@ -120,9 +120,10 @@
 															<div id="image" data-style-decorator="'itemidimage('+item.DisplayID+')'"/>
 															<div id="overlay-complete" data-class-hidden="!item.Grown"/>
 														</div>
-														<div class="overlay-container" data-class-hidden="item.Discovered">
-															<div id="border"/>
-															<div id="question-mark"/>
+														<div data-attr-item_index="item.ItemID" class="overlay-container" onclick="OnEvent(event, 'OnItemSelect')" data-class-hidden="item.Discovered">
+															<div id="border" data-class-hidden="item.DiscoveredSeeds"/>
+															<div id="border-blue" data-class-hidden="!item.DiscoveredSeeds"/>
+															<div id="question-mark" data-class-hidden=""/>
 														</div>
 													</div>
 												</div>
@@ -144,9 +145,11 @@
 											<td class="green-bg">
 												<div class="selected-item">
 													<div class="overlay-container2">
-														<div class="image" data-style-decorator="'itemidimage('+SeedDiaryModel.Selection.DisplayID+')'"/>
+														<div class="image" data-style-decorator="'itemidimage('+SeedDiaryModel.Selection.DisplayID+')'" data-class-hidden="!SeedDiaryModel.Selection.Discovered"/>
+														<div class="question-mark" data-class-hidden="SeedDiaryModel.Selection.Discovered"/>
 														<div id="auto-scrolling" class="scroll-container2 title" style="width:270dp; height:auto; top:10dp;">
-															<div data-rml="ItemName(SeedDiaryModel.Selection.DisplayID)"/>
+															<div data-rml="ItemName(SeedDiaryModel.Selection.DisplayID)" data-class-hidden="!SeedDiaryModel.Selection.Discovered"/>
+															<div data-class-hidden="SeedDiaryModel.Selection.Discovered">???</div>
 														</div>
 														<div class="holiday" data-class-hidden="!SeedDiaryModel.Selection.Holiday">Event Exclusive</div>
 													</div>
@@ -166,7 +169,7 @@
 																	<div id="overlay-complete" data-class-hidden="!item.Grown"/>
 																</div>
 															</div>
-															<div class="selected-item" data-class-hidden="item.Discovered">
+															<div class="selected-item" data-attr-item_index="item.ItemID" onclick="OnEvent(event, 'OnItemSelect')" data-class-hidden="item.Discovered">
 																<div class="overlay-container">
 																	<div id="border"/>
 																	<div id="question-mark"/>
@@ -176,7 +179,7 @@
 														<td class="dark-green2-bg">
 															<div class="selected-item">
 																<div class="seed-name color_dreamsicle" data-rml="TextWithEllipsis(SeedName(item.SeedID), 20)" data-class-hidden="!item.Discovered"/>
-																<div class="seed-name" data-class-hidden="item.Discovered">???</div>
+																<div class="seed-name color_dreamsicle" data-class-hidden="item.Discovered">???</div>
 																
 																<div class="overlay-container" style="width:auto;" data-class-hidden="!item.Discovered">
 																	<div id="image" data-style-decorator="'itemidimage('+item.SeedID+')'"/>
@@ -202,8 +205,9 @@
 																<div id="image" data-style-decorator="'itemidimage('+item.ItemID+')'"/>
 																<div id="overlay-complete" data-class-hidden="!item.Grown"/>
 															</div>
-															<div class="overlay-container" data-class-hidden="item.Discovered">
-																<div id="border"/>
+															<div data-attr-item_index="item.ItemID" class="overlay-container"  onclick="OnEvent(event, 'OnItemSelect')" data-class-hidden="item.Discovered">
+																<div id="border" data-class-hidden="item.DiscoveredSeeds"/>
+																<div id="border-blue" data-class-hidden="!item.DiscoveredSeeds"/>
 																<div id="question-mark"/>
 															</div>
 														</div>

@@ -22,7 +22,7 @@
 			<ContextUpdate type="ScaleScreenHeight">
 				<Set name="sprite">s_MiddleBuilding</Set>
 				<Set name="padding">100</Set>
-			</ContextUpdate>t
+			</ContextUpdate>
 
 			<ContextUpdate type="PositionParallax">
 				<Set name="scale">0.13</Set>

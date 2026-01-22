@@ -5117,8 +5117,8 @@
 		</BattleAnimation>
 		<CageIcon file="game/pets/p_cinder.rttex" frameSize="32,32" frame="0,0"/>
 	</Pet>
-
-
+	
+	
 
 	<Pet itemID="ITEM_ID_PET_PRESENT_GOBLIN">
 		<Name>"Pet Present Goblin"</Name>

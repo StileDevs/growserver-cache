@@ -27,6 +27,11 @@
 		&nbsp;
 		~ `6The Growtopia Team```
 	</String>
+	
+	<!--IAP Claim-->
+	<String id="[iap_invfull_title]">Claim Purchase</String>
+	<String id="[iap_invfull_desc]">Your purchased items are ready to be claimed!</String>
+	<String id="[iap_invfull_body]">Your order of {} has been successfully processed. &#10;&#10;Please ensure you have space in your inventory to claim your items.</String>
 
   <!--FashionShow Bouncer Strings-->
   <String id="[BOUNCER_POPUP_UI_DESC]">Welcome to Growtopia's Fashion Show!</String>
@@ -87,7 +92,7 @@
 	<String id="[mail_auctionfail_body]">There were no bids for your auction.&#10;&#10;`2 {}`` was not sold in {}.&#10;&#10;Reclaim your item now.</String>
 	<String id="[mail_auctionsuccess_title]">Auction Won!</String>
 	<String id="[mail_auctionsuccess_desc]">`2 {}`` bought for `5{} WL``!</String>
-	<String id="[mail_auctionsuccess_body]">You were the winning bid for the`2{}`` in {}.&#10;&#10;`5{} WL`` have been transferred from your World Lock Bank to the Seller.&#10;&#10;Claim your item now.</String>
+	<String id="[mail_auctionsuccess_body]">You were the winning bid for the `2{}`` in {}.&#10;&#10;`5{} WL`` have been transferred from your World Lock Bank to the Seller.&#10;&#10;Claim your item now.</String>
 	<String id="[mail_auctionsuccessowner_title]">Auction Item Sold!</String>
 	<String id="[mail_auctionsuccessowner_desc]">`2{}`` was successfully sold for `5{} WL`` in {}.</String>
 	<String id="[mail_auctionsuccessowner_body]">`2{}`` was successfully sold for `5{} WL`` in {}.&#10;&#10;The world locks have been added to your World Lock Bank.</String>
@@ -140,4 +145,29 @@
 	<String id="[mail_anni2026_desc]">Claim your free gift and join the party!</String>
 
 	
+	<String id="[mail_val2026_title]">Valentine's Gift!</String>
+	<String id="[mail_val2026_desc]">Claim your FREE Gift and spread the love this Valentine's Week in Growtopia.</String>
+	<String id="[mail_val2026_body]">Hi Growtopians,&#10;&#10;Feel the Essence of Love in Growtopia! Join us as we spread the love this Growtopia's `2Valentine's Week``.&#10;&#10;Claim you free gift and join the share the love.&#10;&#10;The Growtopia Team</String>
+	
+
+	<String id="[QUESTLINE_DESCRIPTION]">Check out your progress and objectives</String>
+	
+	<String id="[mail_stpats2026_title]">St. Patrick's Gift!</String>
+	<String id="[mail_stpats2026_desc]">Claim your FREE Gift and join the fun. Parkour & Prizes Await You in St. Patrick's Week!</String>
+	<String id="[mail_stpats2026_body]">Hi Growtopians,&#10;&#10;St. Patrick's Week is here! Complete parkour, earn daily rewards, unlock exclusive items & battle Paddy O' Malice!&#10;&#10;Claim you free gift and join the fun.&#10;&#10;The Growtopia Team</String>
+
+	<String id="[guild_daily_challenge_title]">`9Top Daily Guilds Reward``</String>
+	<String id="[guild_daily_challenge_desc]">#{1}. `3{0}`` with {2} pts</String>
+	<String id="[guild_daily_challenge_body]">Congratulations! You came #{1} in the Daily Guild Challenge with {2} pts. &#10;&#10;Claim your reward now.</String>
+	<String id="[daily_challenge_title]">`9Daily Challenge Ranked Reward``</String>
+	<String id="[daily_challenge_desc]">#{1}. `3{0}`` with {2} pts</String>
+	<String id="[daily_challenge_body]">Congratulations! You came #{1} in the Daily Challenge with {2} pts. &#10;&#10;Claim your reward now.</String>
+	<String id="[daily_challenge_top_perc_title]">`9Daily Challenge Participation Reward``</String>
+	<String id="[daily_challenge_top_perc_desc]">You came in the top {2}%</String>
+	<String id="[daily_challenge_top_perc_body]">Thank you for participating in today's Daily Challenge! You came in the top {2}%. &#10;&#10;Claim your reward now.</String>
+
+	<String id="[mail_easter2026_title]">Easter Gift!</String>
+	<String id="[mail_easter2026_desc]">Claim your FREE Gift and join the hunt in Growtopia's Easter Week.</String>
+	<String id="[mail_easter2026_body]">Hi Growtopians,&#10;&#10;Easter Week is here! Scramble for Magic Eggs in every world, dive into the EGGRESCUE mini-game for some rare loot and climb the Golden Streak for time-limited rewards!&#10;&#10;Claim your free gift and join the fun.&#10;&#10;The Growtopia Team</String>
+
 </Resources>

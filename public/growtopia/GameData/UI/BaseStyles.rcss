@@ -616,3 +616,7 @@ option.selected {
 truncatingstring {
 	display: block;
 }
+.link
+{
+text-decoration: underline;
+}

@@ -5147,5 +5147,149 @@
 		<Rarity>100</Rarity>
 		<EnableOnServer>true</EnableOnServer>
 	</Pet>
+	
+	
+	<Pet itemID="ITEM_ID_PET_CLOVER">
+		<Name>"Pet Clover"</Name>
+		<SubName>"Four"</SubName>
+		<EndName>"leaves"</EndName>
+		<PowerName>"Get Lucky"</PowerName>
+		<PowerDesc>"Grants 25% chance of hitting for double Damage for 10s."</PowerDesc>
+		<Element>"EARTH"</Element>
+		<Damage>0</Damage>
+		<Cooldown>20</Cooldown>
+		<PowerType>"SELF_STATUS"</PowerType>
+		<PowerFlags>0</PowerFlags>
+		<PowerStatusGroup>
+			<PowerStatus type="CRITICAL">
+				<Value>25</Value>
+				<Duration>10</Duration>
+			</PowerStatus>
+		</PowerStatusGroup>
+		<AnimType>"SPLAT"</AnimType>
+		<PowerParticle>124</PowerParticle>
+		<HitParticle>0</HitParticle>
+		<PowerParticleV2>0</PowerParticleV2>
+		<HitParticleV2>0</HitParticleV2>
+		<PowerSound>"audio/slot_win.wav"</PowerSound>
+		<PowerHitSound>""</PowerHitSound>
+		<Rarity>90</Rarity>
+		<EnableOnServer>true</EnableOnServer>
+	</Pet>
+	
+	
+	<Pet itemID="ITEM_ID_CALL_OF_CTHULHU">
+		<Name>"Eldritch Spawn"</Name>
+		<SubName>"Eldritch"</SubName>
+		<EndName>"spawn"</EndName>
+		<PowerName>"Cosmic Fear"</PowerName>
+		<PowerDesc>"Curse the target's skills to fail 20% of the time for 10s."</PowerDesc>
+		<Element>"WATER"</Element>
+		<Damage>20</Damage>
+		<Cooldown>20</Cooldown>
+		<PowerType>"ATTACK"</PowerType>
+		<PowerFlags>2</PowerFlags>
+		<PowerStatusGroup>
+			<PowerStatus type="NIGHTMARES">
+				<Value>20</Value>
+				<Duration>10</Duration>
+			</PowerStatus>
+		</PowerStatusGroup>
+		<AnimType>"SHOOT"</AnimType>
+		<PowerParticle>61</PowerParticle>
+		<HitParticle>0</HitParticle>
+		<PowerParticleV2>0</PowerParticleV2>
+		<HitParticleV2>0</HitParticleV2>
+		<PowerSound>"audio/oracle.wav"</PowerSound>
+		<PowerHitSound>""</PowerHitSound>
+		<Rarity>70</Rarity>
+		<EnableOnServer>true</EnableOnServer>
+		<BattleAnimation file="game/pets/p_espawn.rttex" frameSize="32,32">
+			<Animation type="Idle" frameInterval="100">
+				<Frame>0,0</Frame>
+				<Frame>1,0</Frame>
+				<Frame>2,0</Frame>
+			</Animation>
+			<Animation type="Attack" frameInterval="100">
+				<Frame>4,1</Frame>
+			</Animation>
+			<Animation type="GetHit" frameInterval="100">
+				<Frame>6,0</Frame>
+			</Animation>
+			<Animation type="Dead" frameInterval="100">
+				<Frame>6,0</Frame>
+			</Animation>
+		</BattleAnimation>
+		<CageIcon file="game/pets/p_espawn.rttex" frameSize="32,32" frame="0,0"/>
+	</Pet>
+
+
+	<Pet itemID="ITEM_ID_ROYAL_CALL_OF_CTHULHU">
+		<Name>"Royal Eldritch Spawn"</Name>
+		<SubName>"Eldritch"</SubName>
+		<EndName>"spawn"</EndName>
+		<PowerName>"Cosmic Fear"</PowerName>
+		<PowerDesc>"Curse the target's skills to fail 20% of the time for 15s."</PowerDesc>
+		<Element>"WATER"</Element>
+		<Damage>30</Damage>
+		<Cooldown>30</Cooldown>
+		<PowerType>"ATTACK"</PowerType>
+		<PowerFlags>2</PowerFlags>
+		<PowerStatusGroup>
+			<PowerStatus type="NIGHTMARES">
+				<Value>20</Value>
+				<Duration>15</Duration>
+			</PowerStatus>
+		</PowerStatusGroup>
+		<AnimType>"SHOOT"</AnimType>
+		<PowerParticle>61</PowerParticle>
+		<HitParticle>0</HitParticle>
+		<PowerParticleV2>0</PowerParticleV2>
+		<HitParticleV2>0</HitParticleV2>
+		<PowerSound>"audio/oracle.wav"</PowerSound>
+		<PowerHitSound>""</PowerHitSound>
+		<Rarity>70</Rarity>
+		<EnableOnServer>true</EnableOnServer>
+		<BattleAnimation file="game/pets/p_espawn_r.rttex" frameSize="32,32">
+			<Animation type="Idle" frameInterval="100">
+				<Frame>0,0</Frame>
+				<Frame>1,0</Frame>
+				<Frame>2,0</Frame>
+			</Animation>
+			<Animation type="Attack" frameInterval="100">
+				<Frame>3,0</Frame>
+			</Animation>
+			<Animation type="GetHit" frameInterval="100">
+				<Frame>0,0</Frame>
+			</Animation>
+			<Animation type="Dead" frameInterval="100">
+				<Frame>0,0</Frame>
+			</Animation>
+		</BattleAnimation>
+		<CageIcon file="game/pets/p_espawn_r.rttex" frameSize="32,32" frame="0,0"/>
+	</Pet>
+
+	<Pet itemID="ITEM_ID_MUNIS_CASPIRO">
+		<Name>"Muni's Caspiro"</Name>
+		<SubName>"Muni"</SubName>
+		<EndName>"caspiro"</EndName>
+		<PowerName>"Luck Be A Kitty"</PowerName>
+		<PowerDesc>"Good luck heals thy teammate."</PowerDesc>
+		<Element>"WATER"</Element>
+		<Damage>30</Damage>
+		<Cooldown>15</Cooldown>
+		<PowerType>"HEAL_TEAMMATE"</PowerType>
+		<PowerFlags>0</PowerFlags>
+		<AnimType>"SHOOT_TEAMMATE"</AnimType>
+		<PowerParticle>184</PowerParticle>
+		<HitParticle>0</HitParticle>
+		<PowerParticleV2>0</PowerParticleV2>
+		<HitParticleV2>0</HitParticleV2>
+		<PowerSound>"audio/bell.wav"</PowerSound>
+		<PowerHitSound>""</PowerHitSound>
+		<Rarity>90</Rarity>
+		<EnableOnServer>true</EnableOnServer>
+		<CageIcon file="game/pets/p_mcaspiro2.rttex" frameSize="32,32" frame="0,0"/>
+	</Pet>
 
 </BattlePets>

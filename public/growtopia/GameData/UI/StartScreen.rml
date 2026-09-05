@@ -48,8 +48,7 @@
                     <span class="color_green font-body1 start-screen-shadow-text">{{AppContext.GetPlayerName}}</span>
                 </div>
                 <div class="button button-yellow-color" onclick="OnEvent(event, 'on-logout')">
-                    <span class="label" data-style-display="AppContext.IsUseUbiconnect?'block':'none'" data-rml="AppContext.GetAccountType == 'ubiconnect' ? 'Link' : 'Unlink'"></span>
-                    <span class="label" data-style-display="!AppContext.IsUseUbiconnect?'block':'none'">Logout</span>
+                    <span class="label">Logout</span>
                 </div>
             </div>
         </div>

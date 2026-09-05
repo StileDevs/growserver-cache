@@ -114,7 +114,7 @@
 												<!--Item Grid-->
 												<div id="panel-item-select" class="items-panel">
 													<div data-for="item : SeedDiaryModel.ViewItems">
-														<div data-attr-item_index="item.ItemID" class="overlay-container" onclick="OnEvent(event, 'OnItemSelect')" data-class-hidden="!item.Discovered">
+														<div data-attr-id="'item_'+item.ItemID" data-attr-item_index="item.ItemID" class="overlay-container" onclick="OnEvent(event, 'OnItemSelect')" data-class-hidden="!item.Discovered">
 															<div id="image-border" data-class-hidden="item.ItemID == SeedDiaryModel.Selection.ItemID"/>
 															<div id="image-border-sel" data-class-hidden="item.ItemID != SeedDiaryModel.Selection.ItemID"/>
 															<div id="image" data-style-decorator="'itemidimage('+item.DisplayID+')'"/>
@@ -162,14 +162,14 @@
 												<table data-for="item : SeedDiaryModel.Selection.Seeds">
 													<tr class="small-border-top">
 														<td style="width: 65dp;">
-															<div class="selected-item" data-class-hidden="!item.Discovered">
+															<div data-attr-id="'selected_dis_'+item.ItemID" class="selected-item" data-class-hidden="!item.Discovered">
 																<div class="overlay-container" data-attr-item_index="item.ItemID" onclick="OnEvent(event, 'OnItemSelect')">
 																	<div id="image-border"/>
 																	<div id="image" data-style-decorator="'itemidimage('+item.DisplayID+')'"/>
 																	<div id="overlay-complete" data-class-hidden="!item.Grown"/>
 																</div>
 															</div>
-															<div class="selected-item" data-attr-item_index="item.ItemID" onclick="OnEvent(event, 'OnItemSelect')" data-class-hidden="item.Discovered">
+															<div data-attr-id="'selected_nondis_'+item.ItemID" class="selected-item" data-attr-item_index="item.ItemID" onclick="OnEvent(event, 'OnItemSelect')" data-class-hidden="item.Discovered">
 																<div class="overlay-container">
 																	<div id="border"/>
 																	<div id="question-mark"/>
@@ -200,12 +200,12 @@
 													<div data-rml="ToRMLText(Localize('[SEED_DIARY_MAKE_INFO]'))"/>
 													<div id="panel-make-from-seed" class="items-panel small-border-top scroll-container" style="height:135dp; gap:14dp;">
 														<div data-for="item : SeedDiaryModel.Selection.UsedToMakeItems">
-															<div data-attr-item_index="item.ItemID" class="overlay-container" onclick="OnEvent(event, 'OnItemSelect')" data-class-hidden="!item.Discovered">
+															<div data-attr-id="'item_from_disc_'+item.ItemID" data-attr-item_index="item.ItemID" class="overlay-container" onclick="OnEvent(event, 'OnItemSelect')" data-class-hidden="!item.Discovered">
 																<div id="image-border"/>
 																<div id="image" data-style-decorator="'itemidimage('+item.ItemID+')'"/>
 																<div id="overlay-complete" data-class-hidden="!item.Grown"/>
 															</div>
-															<div data-attr-item_index="item.ItemID" class="overlay-container"  onclick="OnEvent(event, 'OnItemSelect')" data-class-hidden="item.Discovered">
+															<div data-attr-id="'item_from_hid_'+item.ItemID" data-attr-item_index="item.ItemID" class="overlay-container"  onclick="OnEvent(event, 'OnItemSelect')" data-class-hidden="item.Discovered">
 																<div id="border" data-class-hidden="item.DiscoveredSeeds"/>
 																<div id="border-blue" data-class-hidden="!item.DiscoveredSeeds"/>
 																<div id="question-mark"/>

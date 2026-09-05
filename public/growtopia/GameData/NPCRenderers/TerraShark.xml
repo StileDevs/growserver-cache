@@ -148,7 +148,8 @@
 				<Transitions>
 					<Transition to="Patrol" from="GetInToGround"/>
 					<Transition to="Fall" from="Patrol|Chase|Jump">
-						<Condition>
+						<Condition type="and">
+							<IsOnGround>false</IsOnGround>
 							<CheckNPCVelocity ComparisonElement="Y" operatorType="GreaterOrEqual" abs="false">0.1</CheckNPCVelocity>
 						</Condition>
 					</Transition>

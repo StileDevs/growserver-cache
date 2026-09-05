@@ -15,11 +15,16 @@
 }
 
 .ticket-container {
+    margin-top: -15dp; /* Remove fixed margin */
     background-color: rgba(191, 218, 255, 75);
     width:98%;
-    height:175dp;
+    height:170dp;
     display: inline-block; 
     margin-left:2dp;
+}
+
+.full-width-table {
+    margin-top: -15dp;
 }
 
 .theme-text {
@@ -35,12 +40,6 @@
 #add-remove-button {
     margin-left: 24dp;
 }
-
-
-.small_text {
-    margin-top: -27dp; /* Remove fixed margin */
-}
-
 .popup-header-text {
     margin-top: 0dp; /* Remove fixed margin */
     text-align: left;

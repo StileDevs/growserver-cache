@@ -40,7 +40,7 @@
 					</Transition>				
 				</Transitions>
 			</StateMachine>
-			<StateMachine name="TrailAction">
+			<StateMachine name="Trail">
 				<States>
 					<State name="Idle" />
 					<State name="Move" />
@@ -125,7 +125,7 @@
 			<StopIf>
 				<IsRenderMod>RENDER_MOD_MINI_YOU</IsRenderMod>
 			</StopIf>
-			<ParticleSystemUpdate name="ps_luteTrailMove" onState="TrailAction.Move"/>
+			<ParticleSystemUpdate name="ps_luteTrailMove" onState="Trail.Move"/>
 		</AddClothingParticles>
 		<RenderBackpack>
 			<StopIf>

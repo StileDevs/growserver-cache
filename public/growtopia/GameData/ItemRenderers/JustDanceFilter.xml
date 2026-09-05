@@ -59,7 +59,6 @@
 			    <Set name="contrast">contrastValue</Set>
 		    </AvatarTransform>
 
-		    <PlayerSpriteRender name="Sprite27" offset="0,0" clearColor="255,255,255,0" dynamicMode="true"/>
 	    </RenderInFront>
         <RenderBehind value="playerCenter">
 	        <StopIf type="or">
@@ -86,7 +85,7 @@
 		        <Set name="slot">SHIRT</Set>
 		        <Set name="seedFG">false</Set>
 	        </ContextUpdate>	       
-	        <OutlineRender name="Sprite27" alignment="CENTER" blend="NORMAL" WaveSpeed="2" WaveAmp="0.3" CoreBoost="0.5" GlowThickness="3.5" AlphaTolerance="0.25"/>
+
         </RenderBehind>
     </RenderRules>
 </ItemRenderer>

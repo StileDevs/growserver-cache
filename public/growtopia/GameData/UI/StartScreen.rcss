@@ -284,7 +284,7 @@ body.start-screen {
 
     #logo .logo-img {
         decorator: image("interface/large/game_title_themed.rttex" contain);
-}
+    }
 }
 
 @media (theme: summerfest-theme) {
@@ -302,7 +302,7 @@ body.start-screen {
 
     #logo .logo-img {
         decorator: image("interface/large/game_title_themed.rttex" contain);
-}
+    }
 }
 
 @media (theme: winterfest-theme) {
@@ -320,7 +320,7 @@ body.start-screen {
 
     #logo .logo-img {
         decorator: image("interface/large/game_title_themed.rttex" contain);
-}
+    }
 }
 
 @media (theme: patricks-theme) {

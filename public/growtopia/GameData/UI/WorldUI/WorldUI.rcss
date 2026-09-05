@@ -39,7 +39,7 @@ body.world_ui {
 .petbattle-hide #top_panel,
 .hide #top_panel {
     transition: margin-top 0.2s linear-in;
-    margin-top: -100dp;
+    margin-top: -200dp;
 }
 
 /*-------------------------------------------------------------------------------*/

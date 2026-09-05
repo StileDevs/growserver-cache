@@ -366,6 +366,13 @@ button.common_btn:hover
 }
 
 
+/*---------------------     Grow Emoji      --------------*/
+
+.grow_emoji {
+	color: rgb(255, 255, 255);
+	font-family: grow_emoji;
+	margin: 1dp;
+}
 
 /*---------------------     Basic Animations      --------------*/
 
@@ -562,7 +569,7 @@ button.common_btn:hover
 select selectarrow {
     decorator: image(interface/large/gui_auction_dropdown_arrow.rttex);
     width: 40dp;
-    height: 20dp;
+    height: 100%;
 	box-shadow: #000 0 2dp 2dp 0dp;
 }
 

@@ -47,6 +47,10 @@
     text-align: left;
 }
 
+.pre-wrapped {
+    #white-space: pre-wrap;
+}
+
 #window-holder {
     display: flex;
     align-items: center;

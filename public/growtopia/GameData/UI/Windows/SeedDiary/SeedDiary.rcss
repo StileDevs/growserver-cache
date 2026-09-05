@@ -14,7 +14,7 @@
 }
 
 @spritesheet checkbox_sprites {
-    src: game/interface/checkbox.rttex;
+    src: interface/checkbox.rttex;
     resolution: 1x;
     checkbox_off_icon: 0px 0px 32px 32px;
     checkbox_on_icon: 32px 0px 32px 32px;

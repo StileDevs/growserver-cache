@@ -6,6 +6,12 @@
     overflow-y: auto;
 }
 
+#wardrobe-load-popup #load-icon .loader {
+    width: 100dp;
+    height: 100dp;
+    margin: 10vh auto 10vh auto;
+}
+
 #back-button, .equip-button {
     display: block;
     bottom: 0;
@@ -17,6 +23,10 @@
 .equip-button {
     width: 220dp;
     margin: auto;
+}
+
+.equip-button * {
+    pointer-events: none;
 }
 
 /*------- WINDOW TITLE -------*/
@@ -35,8 +45,34 @@
 /*------- TABLE STYLE -------*/
 
 .table-holder  {
+    position: relative;
     width: 100%;
     background-color: rgba(255,255,255,25);
+    margin-bottom: 20dp;
+}
+
+.table-holder .slot-blocker {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    top: 0dp;
+    left: 0dp;
+    padding: 10dp;
+}
+
+.table-holder .slot-blocker .button-container {
+    width: 98%;
+    height: 95%;
+    margin: auto;
+    border-radius: 10dp;
+    background-color: rgba(36,94,112,210);
+}
+
+.table-holder .slot-blocker .button-container .purchase-button {
+    margin: 45% auto auto auto;
+    display: block;
+    width: 225dp;
 }
 
 .full-width-table {
@@ -46,10 +82,14 @@
     column-gap: 10dp;
 }
 
+.full-width-table.locked {
+    filter: blur(5dp);
+}
+
 .full-width-table .item-row tr {
     vertical-align: middle;
     text-align: center;
-    height: 120px; /* Fixed height to ensure uniformity */
+    height: 120dp; /* Fixed height to ensure uniformity */
     padding: 0;
 }
 
@@ -71,7 +111,7 @@
 
 .full-width-table .button-row,
 .full-width-table .button-row td {
-    height: 60px; /* Fixed height to ensure uniformity */
+    height: 60dp; /* Fixed height to ensure uniformity */
     padding: 0;
 }
 

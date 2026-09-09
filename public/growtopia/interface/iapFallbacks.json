@@ -428,5 +428,35 @@
     "currency_sigle": "$ USD",
     "currency_iso": "USD",
     "price": "9.99"
+  },
+  {
+    "id": "rt_grope_generic_bundle04",
+    "type": "consumable",
+    "title": "rt_grope_generic_bundle04",
+    "tier": "5",
+    "currency": "1",
+    "currency_sigle": "$ USD",
+    "currency_iso": "USD",
+    "price": "4.99"
+  },
+  {
+    "id": "rt_grope_generic_bundle05",
+    "type": "consumable",
+    "title": "rt_grope_generic_bundle05",
+    "tier": "10",
+    "currency": "1",
+    "currency_sigle": "$ USD",
+    "currency_iso": "USD",
+    "price": "9.99"
+  },
+  {
+    "id": "rt_grope_generic_bundle06",
+    "type": "consumable",
+    "title": "rt_grope_generic_bundle06",
+    "tier": "10",
+    "currency": "1",
+    "currency_sigle": "$ USD",
+    "currency_iso": "USD",
+    "price": "9.99"
   }
 ]

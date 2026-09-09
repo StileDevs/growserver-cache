@@ -298,7 +298,7 @@
 			<AttachmentSlotsCmp/>
 			<TintOverrideCmp/>
 			<IsBossNPC>
-				<Set name="displayName">"Axe Beak Boss"</Set>
+				<Set name="displayName">"Dual Axebeaks"</Set>
 			</IsBossNPC>
 			<StateMachineCounter>
 				<Set name="AbilitySelection">0</Set>

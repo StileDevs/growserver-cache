@@ -74,6 +74,10 @@
   
   <String id="[WARDROBE_CHANGE_UI_DESC]">Pick which {} item you want your Growtopian to wear.</String>
   
+  <String id="[WARDROBE_SAVE_UI_BTN]">Save as Outfit</String>
+  <String id="[WARDROBE_LOAD_UI_BTN]">Equip Outfit</String>
+  <String id="[WARDROBE_PURCHASE_SLOT_BTN]">Purchase</String>
+  
   <!--************************-->
 
 	<!--Auction Block-->
@@ -229,7 +233,7 @@
 
 	<String id="[DUNGEON_LEADERBOARD_MAIL_TITLE]">Dungeon Leaderboard Rewards</String>
 	<String id="[DUNGEON_LEADERBOARD_MAIL_DESC]">#{1}. `3{0}`` with {2} pts</String>
-	<String id="[DUNGEON_LEADERBOARD_MAIL_BODY]">Congratulations! You came #{1} in the {3} {4} League with {2} pts. &#10;&#10;Claim your reward now.</String>	
+	<String id="[DUNGEON_LEADERBOARD_MAIL_BODY]">Congratulations! You came #{1} in the {3} {4} League with {2} pts. &#10;&#10;Claim your reward now.</String>
 	
 	<String id="[mail_crmspp26_title]">Super Pineapple Party Gift!</String>
 	<String id="[mail_crmspp26_desc]">Claim your FREE Gift and join the fun in Growtopia's Super Pineapple Party.</String>
@@ -242,7 +246,7 @@
 	<String id="[mail_gift_title]">Free Gift!</String>
 	<String id="[mail_gift_desc]">Claim Your Free Gift!</String>
 	<String id="[mail_gift_body]">Hi Growtopians,&#10;&#10;Claim you free gift and join the fun.&#10;&#10;The Growtopia Team</String>
-
+	
 	<String id="[mail_garuda2026_title]">Garuda's Glory Gift!</String>
 	<String id="[mail_garuda2026_desc]">Claim Your Free Garuda's Glory Gift!</String>
 	<String id="[mail_garuda2026_body]">Hi Growtopians,&#10;&#10;The winds of legend are stirring once more as Garuda's Glory returns back to Growtopia! Get your claws on the mythical `8Garuda Chest``, packed with glorious treasures worthy of the heavens!&#10;&#10;Claim you free gift and join the fun.&#10;&#10;The Growtopia Team</String>

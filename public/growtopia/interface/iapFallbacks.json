@@ -458,5 +458,65 @@
     "currency_sigle": "$ USD",
     "currency_iso": "USD",
     "price": "9.99"
+  },
+  {
+    "id": "rt_grope_generic_bundle07",
+    "type": "consumable",
+    "title": "rt_grope_generic_bundle07",
+    "tier": "10",
+    "currency": "1",
+    "currency_sigle": "$ USD",
+    "currency_iso": "USD",
+    "price": "9.99"
+  },
+  {
+    "id": "rt_grope_generic_bundle08",
+    "type": "consumable",
+    "title": "rt_grope_generic_bundle08",
+    "tier": "10",
+    "currency": "1",
+    "currency_sigle": "$ USD",
+    "currency_iso": "USD",
+    "price": "9.99"
+  },
+  {
+    "id": "rt_grope_generic_bundle09",
+    "type": "consumable",
+    "title": "rt_grope_generic_bundle09",
+    "tier": "10",
+    "currency": "1",
+    "currency_sigle": "$ USD",
+    "currency_iso": "USD",
+    "price": "9.99"
+  },
+  {
+    "id": "rt_grope_generic_bundle10",
+    "type": "consumable",
+    "title": "rt_grope_generic_bundle10",
+    "tier": "10",
+    "currency": "1",
+    "currency_sigle": "$ USD",
+    "currency_iso": "USD",
+    "price": "9.99"
+  },
+  {
+    "id": "rt_grope_generic_bundle11",
+    "type": "consumable",
+    "title": "rt_grope_generic_bundle11",
+    "tier": "10",
+    "currency": "1",
+    "currency_sigle": "$ USD",
+    "currency_iso": "USD",
+    "price": "9.99"
+  },
+  {
+    "id": "rt_grope_generic_bundle12",
+    "type": "consumable",
+    "title": "rt_grope_generic_bundle12",
+    "tier": "10",
+    "currency": "1",
+    "currency_sigle": "$ USD",
+    "currency_iso": "USD",
+    "price": "9.99"
   }
 ]

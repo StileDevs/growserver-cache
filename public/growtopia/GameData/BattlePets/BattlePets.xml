@@ -5269,7 +5269,7 @@
 		<CageIcon file="game/pets/p_espawn_r.rttex" frameSize="32,32" frame="0,0"/>
 	</Pet>
 	
-		<Pet itemID="ITEM_ID_MUNIS_CASPIRO">
+	<Pet itemID="ITEM_ID_MUNIS_CASPIRO">
 		<Name>"Muni's Caspiro"</Name>
 		<SubName>"Muni"</SubName>
 		<EndName>"caspiro"</EndName>
@@ -5344,5 +5344,56 @@
 			</Animation>
 		</BattleAnimation>
 </Pet>
+
+
+  <Pet itemID="ITEM_ID_IMMORTAL_PUPPY_LEASH">
+    <Name>"Immortal Puppy Leash"</Name>
+    <SubName>"Immortal"</SubName>
+    <EndName>"puppy"</EndName>
+    <PowerName>"Immortal Pounce"</PowerName>
+    <PowerDesc>"Leap to strike for 12 `2Earth`` Damage!"</PowerDesc>
+    <Element>"EARTH"</Element>
+    <Damage>12</Damage>
+    <Cooldown>5</Cooldown>
+    <PowerType>"ATTACK"</PowerType>
+    <PowerFlags>0</PowerFlags>
+    <AnimType>"LEAP"</AnimType>
+    <PowerParticle>0</PowerParticle>
+    <HitParticle>0</HitParticle>
+    <PowerParticleV2>0</PowerParticleV2>
+    <HitParticleV2>0</HitParticleV2>
+    <PowerSound>"audio/swoosh.wav"</PowerSound>
+    <PowerHitSound>"audio/punch_organic.wav"</PowerHitSound>
+    <Rarity>100</Rarity>
+    <EnableOnServer>true</EnableOnServer>
+  </Pet>
+
+	<Pet itemID="ITEM_ID_PET_CYCLOPS">
+		<Name>"Pet Cyclops"</Name>
+		<SubName>"Cyc"</SubName>
+		<EndName>"lops"</EndName>
+		<PowerName>"Bludgeon"</PowerName>
+		<PowerDesc>"Deal 20 `2Earth`` Damage and stun the target for 15 seconds, making them unable to act."</PowerDesc>
+		<Element>"EARTH"</Element>
+		<Damage>20</Damage>
+		<Cooldown>30</Cooldown>
+		<PowerType>"ATTACK"</PowerType>
+		<PowerFlags>0</PowerFlags>
+		<PowerStatusGroup>
+			<PowerStatus type="STUNNED">
+				<Value>0</Value>
+				<Duration>15</Duration>
+			</PowerStatus>
+		</PowerStatusGroup>
+		<AnimType>"SHOOT"</AnimType>
+		<PowerParticle>143</PowerParticle>
+		<HitParticle>0</HitParticle>
+		<PowerParticleV2>0</PowerParticleV2>
+		<HitParticleV2>0</HitParticleV2>
+		<PowerSound>"audio/rock_destroy.wav"</PowerSound>
+		<PowerHitSound>"audio/bird3.wav"</PowerHitSound>
+		<Rarity>100</Rarity>
+		<EnableOnServer>true</EnableOnServer>
+	</Pet>
 
 </BattlePets>

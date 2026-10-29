@@ -71,7 +71,7 @@
 					</Transition>
 				</Transitions>
 			</StateMachine>
-			<StateMachine name="Hide.Wings">
+			<StateMachine name="HideWings">
 				<States>
 					<State name="True"/>
 					<State name="False"/>
@@ -89,7 +89,7 @@
 					</Transition>
 				</Transitions>
 			</StateMachine>
-			<StateMachine name="Show.Pet">
+			<StateMachine name="ShowPet">
 				<States>
 					<State name="True"/>
 					<State name="False"/>
@@ -119,11 +119,11 @@
 	</Data>
 	<RenderRules>
 		<RenderBackpack>
-			<SpriteRender flip="0,0" name="s_Wing" offset="-32,-18" onState="Hide.Wings.False" />
-			<SpriteRender flip="1,0" name="s_Wing" offset="32,-18" onState="Hide.Wings.False" />
+			<SpriteRender flip="0,0" name="s_Wing" offset="-32,-18" onState="HideWings.False" />
+			<SpriteRender flip="1,0" name="s_Wing" offset="32,-18" onState="HideWings.False" />
 		</RenderBackpack>
 		<RenderPet>
-			<SpriteRender name="s_Pet" alignment="DOWN_CENTER" onState="Show.Pet.True"/>
+			<SpriteRender name="s_Pet" alignment="DOWN_CENTER" onState="ShowPet.True"/>
 		</RenderPet>
 	</RenderRules>
 </ItemRenderer>

@@ -14,7 +14,7 @@
 			<ContextUpdate type="PositionParallax">
 				<Set name="scale">0</Set>
 			</ContextUpdate>
-			<SpriteRender name="s_bg" offset="0, 1" blend="ADDITIVE" alignment="DOWN_LEFT" />
+			<SpriteRender name="s_bg" offset="0, 1" blend="PREMULTIPLIED_ALPHA" alignment="DOWN_LEFT" />
 
 			<ContextUpdate type="ScaleScreenHeight">
 				<Set name="sprite">s_clouds</Set>
